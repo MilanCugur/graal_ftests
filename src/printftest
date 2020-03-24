@@ -13,7 +13,7 @@ if not os.path.isdir(DB_PATH):
     print('Error {} must be valid path to feature tests database.'.format(DB_PATH))
     exit(1)
 
-tests = os.listdir(DB_PATH)
+tests = filter(lambda x: os.path.isdir(os.path.join(DB_PATH, x)), os.listdir(DB_PATH))
 tests.sort()
 for test in tests:
     testpath = os.path.join(DB_PATH, test)
