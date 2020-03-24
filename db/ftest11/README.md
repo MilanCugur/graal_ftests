@@ -1,0 +1,1 @@
+Function example_ftest11: test throw with catch

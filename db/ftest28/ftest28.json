@@ -1,0 +1,19 @@
+{
+"source": "example_ftest28",
+"control splits": [
+{
+"node": "55|If",
+"head": "B7",
+"sons": ["x(53|LoopExit)", "B10, B11"]
+},
+{
+"node": "40|If",
+"head": "B4",
+"sons": ["x(38|LoopExit)", "B6, B7, B8, B9, B10, B11"]
+},
+{
+"node": "22|If",
+"head": "B2",
+"sons": ["x(19|LoopExit)", "B3, B4, B5, B6, B7, B10, B11, B8, B9"]
+}]
+}

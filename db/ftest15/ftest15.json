@@ -1,0 +1,20 @@
+{
+    "source": "example_ftest15",
+    "control splits": [
+	{
+	    "node": "43|If",
+	    "head": "B8",
+	    "sons": ["B9", "B10, B11"]
+	},
+	{
+	    "node": "12|If",
+	    "head": "B1",
+	    "sons": ["B2, B3", "B4, B5"]
+	},
+	{
+	    "node": "8|If",
+	    "head": "B0",
+	    "sons": ["B8, B9, B10, B11", "B1, B2, B3, B4, B5, B6, B7"]
+	}
+    ]
+}

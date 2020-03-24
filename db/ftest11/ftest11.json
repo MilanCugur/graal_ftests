@@ -1,0 +1,19 @@
+{
+"source": "example_ftest11",
+"control splits": [
+{
+"node": "13|If",
+"head": "B3",
+"sons": ["B4", "B8"]
+},
+{
+"node": "60|Invoke#Throwable.fillInStackTrace",
+"head": "B1",
+"sons": ["B2", "B3, B4, B8"]
+},
+{
+"node": "7|If",
+"head": "B0",
+"sons": ["B9", "B1, B3, B4, B8, B2, B5, B6, B7"]
+}]
+}

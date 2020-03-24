@@ -1,0 +1,1 @@
+Function example_ftest5: test simple switch statement

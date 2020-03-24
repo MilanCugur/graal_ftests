@@ -1,0 +1,9 @@
+{
+"source": "example_ftest8",
+"control splits": [
+{
+"node": "12|If",
+"head": "B1",
+"sons": ["B2, B3", "x(9|LoopExit)"]
+}]
+}

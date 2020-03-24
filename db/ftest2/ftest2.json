@@ -1,0 +1,64 @@
+{
+"source": "example_ftest2",
+"control splits": [
+{
+"node": "120|If",
+"head": "B32",
+"sons": ["B35", "B33, B34"]
+},
+{
+"node": "114|If",
+"head": "B31",
+"sons": ["B36", "B32, B33, B34, B35"]
+},
+{
+"node": "102|If",
+"head": "B26",
+"sons": ["B29", "B27, B28"]
+},
+{
+"node": "96|If",
+"head": "B25",
+"sons": ["B30", "B26, B27, B28, B29"]
+},
+{
+"node": "84|If",
+"head": "B20",
+"sons": ["B23", "B21, B22"]
+},
+{
+"node": "77|If",
+"head": "B19",
+"sons": ["B20, B21, B22, B23", "B24"]
+},
+{
+"node": "65|If",
+"head": "B14",
+"sons": ["B17", "B15, B16"]
+},
+{
+"node": "59|If",
+"head": "B13",
+"sons": ["B18", "B14, B15, B16, B17"]
+},
+{
+"node": "46|If",
+"head": "B8",
+"sons": ["B9, B10", "B11"]
+},
+{
+"node": "39|If",
+"head": "B7",
+"sons": ["B12", "B8, B9, B10, B11"]
+},
+{
+"node": "23|If",
+"head": "B2",
+"sons": ["B3, B4", "B5"]
+},
+{
+"node": "16|If",
+"head": "B1",
+"sons": ["B6", "B2, B3, B4, B5"]
+}]
+}

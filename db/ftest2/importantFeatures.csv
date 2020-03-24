@@ -1,0 +1,13 @@
+Graph Id,Source Function,Node Description,Node Id,Node BCI,head
+47953,"example_ftest2",23|If,23,15,B2,"[B3, B4]","[B5]"
+47953,"example_ftest2",16|If,16,10,B1,"[B6]","[B2, B3, B4, B5]"
+47953,"example_ftest2",46|If,46,36,B8,"[B9, B10]","[B11]"
+47953,"example_ftest2",39|If,39,31,B7,"[B12]","[B8, B9, B10, B11]"
+47953,"example_ftest2",65|If,65,57,B14,"[B15, B16]","[B17]"
+47953,"example_ftest2",59|If,59,52,B13,"[B18]","[B14, B15, B16, B17]"
+47953,"example_ftest2",84|If,84,78,B20,"[B21, B22]","[B23]"
+47953,"example_ftest2",77|If,77,73,B19,"[B24]","[B20, B21, B22, B23]"
+47953,"example_ftest2",102|If,102,99,B26,"[B27, B28]","[B29]"
+47953,"example_ftest2",96|If,96,94,B25,"[B30]","[B26, B27, B28, B29]"
+47953,"example_ftest2",120|If,120,120,B32,"[B33, B34]","[B35]"
+47953,"example_ftest2",114|If,114,115,B31,"[B36]","[B32, B33, B34, B35]"

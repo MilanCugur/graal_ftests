@@ -1,0 +1,9 @@
+{
+"source": "example_ftest1",
+"control splits": [
+{
+"node": "7|If",
+"head": "B0",
+"sons": ["B1, B2", "B3, B4"]
+}]
+}

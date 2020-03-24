@@ -1,0 +1,449 @@
+-------------------------------------------------------------------------------
+>Log Session: Monday, March 23, 2020 at 10:07:25 AM Central European Standard Time
+>System Info: 
+  Product Version         = IdealGraphVisualizer ol-netbeans-11-125-on-20191015
+  Operating System        = Linux version 5.3.0-40-generic running on amd64
+  Java; VM; Vendor        = 11.0.6; OpenJDK 64-Bit Server VM 11.0.6+9-jvmci-20.0-b02; Oracle Corporation
+  Runtime                 = OpenJDK Runtime Environment 11.0.6+9-jvmci-20.0-b02
+  Java Home               = /home/cugur/Desktop/mygraal/graal/sdk/mxbuild/linux-amd64/GRAALVM_UNKNOWN_JAVA11/graalvm-unknown-java11-20.1.0-dev
+  System Locale; Encoding = en_US (idealgraphvisualizer); UTF-8
+  Home Directory          = /home/cugur
+  Current Directory       = /home/cugur/Desktop/mygraal/graal/ParseImportantFeaturesTests/db/ftest15
+  User Directory          = /home/cugur/.idealgraphvisualizer/0.29
+  Cache Directory         = /home/cugur/.cache/idealgraphvisualizer/0.29
+  Installation            = /home/cugur/Desktop/idealgraphvisualizer/idealgraphvisualizer
+                            /home/cugur/Desktop/idealgraphvisualizer/extide
+                            /home/cugur/Desktop/idealgraphvisualizer/harness
+                            /home/cugur/Desktop/idealgraphvisualizer/ide
+                            /home/cugur/Desktop/idealgraphvisualizer/java
+                            /home/cugur/Desktop/idealgraphvisualizer/nb
+                            /home/cugur/Desktop/idealgraphvisualizer/webcommon
+                            /home/cugur/Desktop/idealgraphvisualizer/platform
+  Boot & Ext. Classpath   = 
+  Application Classpath   = /home/cugur/Desktop/idealgraphvisualizer/platform/lib/boot.jar:/home/cugur/Desktop/idealgraphvisualizer/platform/lib/org-openide-modules.jar:/home/cugur/Desktop/idealgraphvisualizer/platform/lib/org-openide-util.jar:/home/cugur/Desktop/idealgraphvisualizer/platform/lib/org-openide-util-lookup.jar:/home/cugur/Desktop/idealgraphvisualizer/platform/lib/org-openide-util-ui.jar
+  Startup Classpath       = /home/cugur/Desktop/idealgraphvisualizer/platform/core/core.jar:/home/cugur/Desktop/idealgraphvisualizer/platform/core/org-netbeans-libs-asm.jar:/home/cugur/Desktop/idealgraphvisualizer/platform/core/org-openide-filesystems.jar:/home/cugur/Desktop/idealgraphvisualizer/platform/core/asm-all-5.0.1.jar:/home/cugur/Desktop/idealgraphvisualizer/platform/core/core-base.jar:/home/cugur/Desktop/idealgraphvisualizer/idealgraphvisualizer/core/org-graalvm-visualizer-upgrader.jar:/home/cugur/Desktop/idealgraphvisualizer/idealgraphvisualizer/core/locale/core_idealgraphvisualizer.jar
+-------------------------------------------------------------------------------
+WARNING [org.netbeans.core.modules]: the modules [org.netbeans.modules.java.editor.lib] use org.netbeans.modules.editor.deprecated.pre65formatting which is deprecated.
+Gtk-Message: 10:07:31.062: Failed to load module "canberra-gtk-module"
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.netbeans.swing.plaf.gtk.ThemeValue (jar:file:/home/cugur/Desktop/idealgraphvisualizer/platform/modules/org-netbeans-swing-plaf.jar!/) to method javax.swing.plaf.synth.SynthStyle.getColorForState(javax.swing.plaf.synth.SynthContext,javax.swing.plaf.synth.ColorType)
+WARNING: Please consider reporting this to the maintainers of org.netbeans.swing.plaf.gtk.ThemeValue
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+INFO [org.graalvm.visualizer.connection.Server]: Listening starts on /127.0.0.1:4445
+INFO [org.netbeans.core.startup.NbEvents]: Turning on modules:
+	org.openide.util.lookup [8.38 ol-netbeans-11-125-on-20191015]
+	org.openide.util [9.12 ol-netbeans-11-125-on-20191015]
+	org.openide.util.ui [9.13 ol-netbeans-11-125-on-20191015]
+	org.openide.modules [7.53 ol-netbeans-11-125-on-20191015]
+	org.netbeans.api.annotations.common/1 [1.32 ol-netbeans-11-125-on-20191015]
+	org.openide.filesystems [9.15 ol-netbeans-11-125-on-20191015]
+	org.openide.awt [7.73 ol-netbeans-11-125-on-20191015]
+	org.netbeans.api.progress/1 [1.52 ol-netbeans-11-125-on-20191015]
+	org.netbeans.api.progress.nb [1.52 ol-netbeans-11-125-on-20191015]
+	org.openide.dialogs [7.47 ol-netbeans-11-125-on-20191015]
+	org.openide.nodes [7.50 ol-netbeans-11-125-on-20191015]
+	org.openide.windows [6.82 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.mimelookup/1 [1.45 ol-netbeans-11-125-on-20191015]
+	org.openide.text [6.72 ol-netbeans-11-125-on-20191015]
+	org.netbeans.api.scripting [1.2 ol-netbeans-11-125-on-20191015]
+	org.netbeans.swing.tabcontrol [1.61 ol-netbeans-11-125-on-20191015]
+	org.netbeans.swing.outline [1.39 ol-netbeans-11-125-on-20191015]
+	org.openide.explorer [6.67 ol-netbeans-11-125-on-20191015]
+	org.openide.actions [6.44 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.queries/1 [1.48 ol-netbeans-11-125-on-20191015]
+	org.netbeans.api.templates [1.13 ol-netbeans-11-125-on-20191015]
+	org.openide.filesystems.nb [9.15 ol-netbeans-11-125-on-20191015]
+	org.openide.loaders [7.72 ol-netbeans-11-125-on-20191015]
+	org.netbeans.api.intent [1.7 ol-netbeans-11-125-on-20191015]
+	org.netbeans.api.io [1.8 ol-netbeans-11-125-on-20191015]
+	org.openide.io [1.54 ol-netbeans-11-125-on-20191015]
+	org.openide.execution [9.8 ol-netbeans-11-125-on-20191015]
+	org.netbeans.swing.plaf [1.46 ol-netbeans-11-125-on-20191015]
+	org.netbeans.spi.viewmodel/2 [1.56 ol-netbeans-11-125-on-20191015]
+	org.netbeans.spi.tasklist/1 [1.40.0.1 1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.spi.quicksearch [1.32 ol-netbeans-11-125-on-20191015]
+	org.netbeans.spi.palette/1 [1.51 ol-netbeans-11-125-on-20191015]
+	org.netbeans.spi.navigator/1 [1.43 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.util/1 [1.70 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.settings.lib [1.56.0.1 1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.settings/1 [1.62 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.lexer/2 [1.68.0.1 1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.fold/1 [1.50 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.document [1.14.0.3 3 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.lib2/1 [2.24.0.55.3 55 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.guards/1 [1.38 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.indent/2 [1.48 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.lib/3 [4.12.0.23.3.55 23 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.keyring [1.29 ol-netbeans-11-125-on-20191015]
+	org.netbeans.libs.asm [5.8 ol-netbeans-11-125-on-20191015]
+	org.netbeans.bootstrap/1 [2.83 ol-netbeans-11-125-on-20191015]
+	org.netbeans.core.startup.base [1.67.0.1 1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.core.startup/1 [1.67.0.1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.sampler [1.19 ol-netbeans-11-125-on-20191015]
+	org.netbeans.core/2 [3.56 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.options.api/1 [1.50 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.options.keymap [1.42 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.settings.storage/1 [1.56.0.1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.fold.nbui [1.17.0.55 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor/3 [1.92.0.6.3.23.55 6 ol-netbeans-11-125-on-20191015]
+	org.netbeans.libs.javacapi [8.26.0.3 3 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.nbjavac.api [1.71 191014]
+	org.netbeans.libs.javacimpl/1 [0.52.0.25 25 ol-netbeans-11-125-on-20191015]
+	org.netbeans.lib.nbjavac [1.21.0.3.25 3 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.errorstripe.api/1 [2.37.0.1 1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.api.java.classpath/1 [1.59 ol-netbeans-11-125-on-20191015]
+	org.netbeans.api.java/1 [1.70 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.java.platform/1 [1.47 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.options.editor/1 [1.65 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.errorstripe/2 [2.39.0.1.1 1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.projectapi/1 [1.72 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.diff/1 [1.56.0.42.1 42 ol-netbeans-11-125-on-20191015]
+	org.netbeans.libs.lucene/3 [3.24 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.masterfs/2 [2.60.0.2 2 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.parsing.lucene/2 [2.40.0.1 1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.parsing.api/1 [9.12.0.8 8 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.projectuiapi.base/1 [1.90.0.9 9 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.project.indexingbridge [1.22 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.parsing.indexing [9.13.0.1.3.8 1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.refactoring.api [1.52.0.1 1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.classfile/1 [1.57 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.indent.support [1.47 ol-netbeans-11-125-on-20191015]
+	org.netbeans.core.multiview/1 [1.49 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.java.lexer/1 [1.40 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.java.preprocessorbridge [1.54.0.1 1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.java.source.base [2.42.0.5.3.25.8.1 5 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.autoupdate.services [1.58 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.autoupdate.ui [1.50 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.projectuiapi/1 [1.93.0.8 8 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.indent.project/0 [1.27 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.java.source [0.169.0.32.3.25.5.1 32 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.project.spi.intern [1.8 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.project.libraries/1 [1.58 ol-netbeans-11-125-on-20191015]
+	org.apache.xml.resolver [1.36.0.12 12 ol-netbeans-11-125-on-20191015]
+	org.netbeans.api.xml/1 [1.49 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.xml.catalog/2 [3.9.0.4 4 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.project.ant/1 [1.72 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.java.project/1 [1.77 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.settings/1 [1.54 ol-netbeans-11-125-on-20191015]
+	org.netbeans.spi.editor.hints/0 [1.47.0.7.55 7 ol-netbeans-11-125-on-20191015]
+	org.netbeans.core.windows/2 [2.88 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.code.analysis/0 [1.31 ol-netbeans-11-125-on-20191015]
+	org.netbeans.spi.java.hints [1.35.0.13.3.25.32.5.8 13 ol-netbeans-11-125-on-20191015]
+	org.netbeans.api.debugger/1 [1.60 ol-netbeans-11-125-on-20191015]
+	org.netbeans.spi.debugger.ui/1 [2.59 ol-netbeans-11-125-on-20191015]
+	org.netbeans.api.debugger.jpda/2 [3.12 ol-netbeans-11-125-on-20191015]
+	org.netbeans.spi.debugger.jpda.ui [3.8 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.xml.core/2 [1.48.0.4 4 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.xml.xam/1 [1.37.0.1 1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.xml.lexer [1.35 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.xml.xdm/1 [1.39.0.1 1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.libs.corba.omgapi [1.0 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.whitelist [1.28 ol-netbeans-11-125-on-20191015]
+	org.netbeans.libs.json_simple/1 [0.17 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.web.common [1.103 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.web.indent [1.25 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.extexecution.base/2 [1.9 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.extexecution/2 [1.53 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.web.common.ui [1.6 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.extbrowser/1 [1.58 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.web.browser.api [1.50 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.sendopts/2 [2.41 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.utilities/1 [1.66 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.javahelp/1 [2.46 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.usersguide/1 [1.53 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.updatecenters/1 [1.45 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.terminal [1.32 ol-netbeans-11-125-on-20191015]
+	org.netbeans.lib.terminalemulator [1.42 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.terminal.nb [1.5 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.templates/1 [1.12 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.swing.validation/2 [1.37 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.project.libraries.ui/1 [1.57 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.project.ant.ui/1 [1.70 ol-netbeans-11-125-on-20191015]
+	org.netbeans.api.search [1.26 ol-netbeans-11-125-on-20191015]
+	org.netbeans.api.xml.ui/1 [1.49 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.options.java [1.19 ol-netbeans-11-125-on-20191015]
+	org.apache.tools.ant.module/3 [3.89.0.2 2 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.java.platform.ui/1 [1.47 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.java.project.ui/1 [1.80 ol-netbeans-11-125-on-20191015]
+	org.netbeans.core.ui/1 [1.50 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.jumpto/1 [1.59.0.1 1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.java.sourceui/1 [1.50.0.1.25.32.5 1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.gsf.testrunner/2 [2.14 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.gsf.testrunner.ui [1.15 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.gototest/1 [1.38 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.refactoring.java/1 [1.66.0.1.25 1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.core.execution/1 [1.46 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.favorites/1 [1.51 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.projectui [1.63.0.8.9 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.projectapi.nb [1.8 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.project.spi.intern.impl [1.8 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.progress.ui [1.38 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.print [7.31 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.parsing.nb [1.8.0.8.1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.core.ide/1 [1.46 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.notifications [1.13 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.nbjavac.impl [1.71 191014]
+	org.netbeans.modules.nbjavac/1 [1.71 191014]
+	org.apache.commons.logging [1.1.1 1.1.1]
+	org.netbeans.modules.maven.embedder/2 [2.58 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.maven.model/1 [1.49 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.maven.indexer/2 [2.44 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.maven.indexer.ui/2 [2.39 ol-netbeans-11-125-on-20191015]
+	org.apache.commons.codec [1.3.0 1.3.0]
+	org.netbeans.libs.antlr3.runtime [1.26.0.1 1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.java.api.common/0 [1.128 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.maven/2 [2.133 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.masterfs.ui [2.8.0.2 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.masterfs.nio2 [1.20 ol-netbeans-11-125-on-20191015]
+	org.netbeans.libs.jna/1 [1.52 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.masterfs.linux [1.18 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.lexer.nbbridge/1 [1.37.0.1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.csl.types/1 [1.5 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.javascript2.types/1 [1.5 ol-netbeans-11-125-on-20191015]
+	org.netbeans.libs.antlr4.runtime [1.6.0.1 1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.javascript2.json [1.8 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.html.lexer/1 [1.43 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.javascript2.lexer/1 [1.11 ol-netbeans-11-125-on-20191015]
+	org.netbeans.libs.nashorn/1 [1.30 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.javascript2.doc/1 [1.4 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.javascript2.sdoc [1.3 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.completion/1 [1.49.0.2 2 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.codetemplates/1 [1.48.0.1 1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.breadcrumbs/0 [1.22 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.actions/1 [1.36.0.55 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.csl.api/2 [2.59.0.2.1.1.8.1 2 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.html.editor.lib/3 [3.37 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.css.lib/1 [1.88 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.bracesmatching/0 [1.44.0.55 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.css.model [1.36 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.css.editor/1 [1.73 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.html/1 [1.66 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.html.editor/2 [2.60 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.javascript2.model/1 [1.9 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.javascript2.editor/1 [0.78 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.javascript2.requirejs [0.12 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.javascript2.prototypejs [0.10 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.javascript2.jsdoc [1.3 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.java.source.nbjavac [1.5.0.1.3.25.5.1 1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.java.openjdk.project/1 [1.2 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.java.navigation/1 [1.45 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.ant.browsetask [1.45 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.j2ee.metadata/0 [1.37 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.j2ee.metadata.model.support/1 [1.36 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.j2ee.persistenceapi/1 [1.41.0.1 1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.debugger.jpda.ant [1.43 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.java.j2seproject/1 [1.92.0.48 48 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.java.j2seplatform/1 [1.46 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.java.j2semodule [1.7 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.deprecated.pre65formatting/0 [1.36.0.1.6.23.55 1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.java.editor.lib/1 [1.43 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.java.editor.base [2.70.0.1 1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.java.completion [1.13.0.1 1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.java.editor/1 [2.72.0.12.1.1.1 12 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.java.debug [1.43.0.1.25.5 1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.html.parser/1 [1.39.0.1 1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.search [1.30.0.0.55 0 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.plain.lib/1 [1.38 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.plain/2 [1.40 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.mimelookup.impl/1 [1.37 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.editor.htmlui [1.4 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.defaults/1 [1.36 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.debugger.jpda.projects [1.45 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.debugger.jpda.projectsui [1.8 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.debugger.jpda/2 [1.112.0.80 80 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.debugger.jpda.ui/1 [1.59 ol-netbeans-11-125-on-20191015]
+	org.netbeans.modules.autoupdate.cli [1.18 ol-netbeans-11-125-on-20191015]
+	org.netbeans.libs.osgi [1.27 ol-netbeans-11-125-on-20191015]
+	org.netbeans.libs.oracle.jsparser/1 [1.0 20181030-d1e23ce8c855]
+	org.netbeans.libs.jna.platform/1 [1.20 ol-netbeans-11-125-on-20191015]
+	org.netbeans.libs.graalsdk [1.1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.libs.freemarker/1 [2.39.0.238 238 ol-netbeans-11-125-on-20191015]
+	org.netbeans.libs.felix [2.20 ol-netbeans-11-125-on-20191015]
+	org.netbeans.core.output2/1 [1.47 ol-netbeans-11-125-on-20191015]
+	org.netbeans.core.network [1.17 ol-netbeans-11-125-on-20191015]
+	org.netbeans.core.netigso [1.36 ol-netbeans-11-125-on-20191015]
+	org.netbeans.core.nativeaccess/1 [1.36 ol-netbeans-11-125-on-20191015]
+	org.netbeans.core.multitabs/1 [1.17.0.1 1 ol-netbeans-11-125-on-20191015]
+	org.netbeans.core.io.ui/1 [1.35 ol-netbeans-11-125-on-20191015]
+	org.netbeans.api.visual [2.53 ol-netbeans-11-125-on-20191015]
+	org.graalvm.visualizer.libs.batik [1.0 19.3.1]
+	org.graalvm.visualizer.svg [1.0 19.3.1]
+	org.graalvm.visualizer.layout [1.0 19.3.1]
+	org.graalvm.graphio [1.0 19.3.1]
+	net.java.html.json [1.6.1 1.6.1]
+	net.java.html [1.6.1 1.6.1]
+	org.graalvm.visualizer.settings [1.1 19.3.1]
+	org.graalvm.visualizer.data [1.4 19.3.1]
+	org.graalvm.visualizer.hierarchicallayout [1.0 19.3.1]
+	org.graalvm.visualizer.polyglot.runner [1.1 19.3.1]
+	org.graalvm.visualizer.util [1.3 19.3.1]
+	org.graalvm.visualizer.graph [1.1 19.3.1]
+	org.graalvm.visualizer.filter [1.2 19.3.1]
+	org.graalvm.visualizer.selectioncoordinator [1.1 19.3.1]
+	org.graalvm.visualizer.difference [1.0 19.3.1]
+	org.graalvm.visualizer.view [1.1 19.3.1]
+	org.graalvm.visualizer.upgrader [1.0 19.3.1]
+	org.graalvm.visualizer.ui [1.0 19.3.1]
+	org.graalvm.visualizer.source [1.0 19.3.1]
+	org.graalvm.visualizer.source.java [1.0 19.3.1]
+	org.graalvm.visualizer.shell [1.0 19.3.1]
+	org.graalvm.visualizer.mxprojects [1.18 19.3.1]
+	org.graalvm.visualizer.graal [1.1 19.3.1]
+	org.graalvm.visualizer.filterwindow [1.1 19.3.1]
+	org.graalvm.visualizer.connection [1.3 19.3.1]
+	org.graalvm.visualizer.coordinator [1.2 19.3.1]
+	org.graalvm.visualizer.controlflow [1.1 19.3.1]
+	org.graalvm.visualizer.bytecodes [1.1 19.3.1]
+INFO [org.netbeans.core.netigso.Netigso]: bundle net.java.html.boot@1.6.1 resolved
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.netbeans.html.ko4j@1.6.1 resolved
+INFO [org.netbeans.core.netigso.Netigso]: bundle net.java.html.boot.fx@1.6.1 resolved
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.apache.felix.framework@6.0.2 started
+INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy resolver: Gnome
+INFO [org.netbeans.core.network.proxy.gnome.GsettingsNetworkProxy]: GSettings system proxy resolver: direct connection
+INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy reloading succeeded.
+INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy - mode: direct
+INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy: fell to default (correct if direct mode went before)
+INFO [org.netbeans.ui.metrics.laf]: USG_LOOK_AND_FEEL
+INFO [org.netbeans.ui.indexing]: Indexing started, time from last indexing 0 ms.
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Resolving dependencies took: 24 ms
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Complete indexing of 0 binary roots took: 1 ms
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Complete indexing of 0 source roots took: 0 ms (New or modified files: 0, Deleted files: 0) [Adding listeners took: 0 ms]
+INFO [org.netbeans.ui.indexing]: Indexing finished, indexing took 2,869 ms.
+WARNING [org.netbeans.core.startup.InstalledFileLocatorImpl]: module org.netbeans.libs.javacapi in /home/cugur/Desktop/idealgraphvisualizer/java does not own modules/ext/nb-javac-api.jar at org.netbeans.core.startup.layers.NbinstURLMapper.decodeURL(NbinstURLMapper.java:96)
+Diagnostic information
+Input arguments:
+	-XX:+UnlockExperimentalVMOptions
+	-XX:+EnableJVMCIProduct
+	-XX:-UnlockExperimentalVMOptions
+	-XX:ThreadPriorityPolicy=1
+	-Djdk.home=/home/cugur/Desktop/mygraal/graal/sdk/latest_graalvm_home
+	-Dnetbeans.default_userdir_root=/home/cugur/.idealgraphvisualizer
+	-Dnetbeans.running.environment=gnome
+	-Dnetbeans.dirs=/home/cugur/Desktop/idealgraphvisualizer/idealgraphvisualizer:/home/cugur/Desktop/idealgraphvisualizer/extide:/home/cugur/Desktop/idealgraphvisualizer/harness:/home/cugur/Desktop/idealgraphvisualizer/ide:/home/cugur/Desktop/idealgraphvisualizer/java:/home/cugur/Desktop/idealgraphvisualizer/nb:/home/cugur/Desktop/idealgraphvisualizer/webcommon:
+	-Dnetbeans.home=/home/cugur/Desktop/idealgraphvisualizer/platform
+	-Dnetbeans.importclass=org.graalvm.visualizer.upgrader.Upgrader
+	-XX:+UseStringDeduplication
+	-DRepositoryUpdate.increasedLogLevel=800
+	-Xss2m
+	-Xms32m
+	-Dnetbeans.logger.console=true
+	-ea
+	-Djdk.gtk.version=2.2
+	-Dapple.laf.useScreenMenuBar=true
+	-Dapple.awt.graphics.UseQuartz=true
+	-Dsun.java2d.noddraw=true
+	-Dsun.java2d.dpiaware=true
+	-Dsun.zip.disableMemoryMapping=true
+	-Dplugin.manager.check.updates=false
+	--add-opens=java.base/java.net=ALL-UNNAMED
+	--add-opens=java.base/java.lang.ref=ALL-UNNAMED
+	--add-opens=java.base/java.lang=ALL-UNNAMED
+	--add-opens=java.base/java.security=ALL-UNNAMED
+	--add-opens=java.base/java.util=ALL-UNNAMED
+	--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED
+	--add-opens=java.desktop/javax.swing.text=ALL-UNNAMED
+	--add-opens=java.desktop/javax.swing=ALL-UNNAMED
+	--add-opens=java.desktop/java.awt=ALL-UNNAMED
+	--add-opens=java.desktop/java.awt.event=ALL-UNNAMED
+	--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED
+	--add-opens=jdk.jshell/jdk.jshell=ALL-UNNAMED
+	--add-modules=jdk.jshell
+	--add-exports=java.desktop/sun.awt=ALL-UNNAMED
+	--add-exports=java.desktop/java.awt.peer=ALL-UNNAMED
+	--add-exports=java.desktop/com.sun.beans.editors=ALL-UNNAMED
+	--add-exports=java.desktop/sun.swing=ALL-UNNAMED
+	--add-exports=java.desktop/sun.awt.im=ALL-UNNAMED
+	--add-exports=jdk.internal.jvmstat/sun.jvmstat.monitor=ALL-UNNAMED
+	--add-exports=java.management/sun.management=ALL-UNNAMED
+	--add-exports=java.base/sun.reflect.annotation=ALL-UNNAMED
+	--add-exports=jdk.javadoc/com.sun.tools.javadoc.main=ALL-UNNAMED
+	-XX:+IgnoreUnrecognizedVMOptions
+	-XX:+HeapDumpOnOutOfMemoryError
+	-XX:HeapDumpPath=/home/cugur/.idealgraphvisualizer/0.29/var/log/heapdump.hprof
+Compiler: HotSpot 64-Bit Tiered Compilers
+Heap memory usage: initial 32.0MB maximum 1964.0MB
+Non heap memory usage: initial 37.6MB maximum -1b
+Garbage collector: G1 Young Generation (Collections=31 Total time spent=1s)
+Garbage collector: G1 Old Generation (Collections=0 Total time spent=0s)
+Classes: loaded=11812 total loaded=11835 unloaded 23
+INFO [org.netbeans.core.ui.warmup.DiagnosticTask]: Total memory 8,229,900,288
+INFO [null]: Total physical memory 8,229,900,288
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+WARNING [org.netbeans.TopSecurityManager]: use of system property netbeans.home has been obsoleted in favor of InstalledFileLocator/Places at org.netbeans.modules.java.j2seplatform.platformdefinition.Util.removeNBArtifacts(Util.java:337)
+INFO [org.netbeans.ui.indexing]: Indexing started, time from last indexing 568,414 ms.
+WARNING [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Non-empty roots encountered while no projects are opened; loglevel increased
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Resolving dependencies took: 11 ms
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Complete indexing of 75 binary roots took: 1,617 ms
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Complete indexing of 0 source roots took: 0 ms (New or modified files: 0, Deleted files: 0) [Adding listeners took: 0 ms]
+INFO [org.netbeans.ui.indexing]: Indexing finished, indexing took 1,640 ms.
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Warning: Nashorn engine is planned to be removed from a future JDK release
+INFO [org.netbeans.ui.indexing]: Indexing started, time from last indexing 9,980,011 ms.
+INFO [org.netbeans.ui.indexing]: Indexing finished, indexing took 38 ms.
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.apache.felix.framework@6.0.2 256

@@ -1,0 +1,130 @@
+#!/usr/bin/python
+
+import json
+import os
+import itertools
+import sys
+import re
+import subprocess
+
+"""
+Call: python createFeatureTest.py DB_PATH IGV_BIN_PATH
+Dependencies: emacs, native-image (pre installed)
+"""
+
+if len(sys.argv)!=3:
+    print('Make feature test tool call: $./makeftest DB_PATH IGV_BIN_PATH')
+    exit(1)
+    
+print('Welcome to "features tests" creator.\nEnsure you have emacs and native-image tool preinstalled.\n\n')
+
+DB_PATH = sys.argv[1]
+IGV_BIN_PATH = sys.argv[2]
+
+# CHOOSE DIR/FILENAME
+assert os.path.isdir(DB_PATH)
+db_names = [name for name in os.listdir(DB_PATH) if os.path.isdir(os.path.join(DB_PATH, name))]
+ftest_names = list(filter(lambda x: re.match('ftest[0-9]+', x), db_names))
+ftest_numbers = map(lambda x: int(re.findall('\d+', x)[0]), ftest_names)
+suggestion = max(ftest_numbers)+1
+
+source = raw_input('Insert name (folder, file, function)\nSuggestion: ftest{}[ENTER TO CHOOSE]: '.format(suggestion))  # Py2.7
+if source=='' or source in db_names:
+    source = 'ftest{}'.format(suggestion)
+print('You choose name: {}'.format(source))
+
+# CREATE DIR
+os.chdir(DB_PATH)
+os.mkdir(source)
+os.chdir(source)
+print('Created directory {}.'.format(source))
+
+# CREATE README.md DESCRIPTION
+print('Create README.md description file.')
+with open('./README.md', 'w') as r:
+    r.write('Function example_{}: '.format(source))
+
+ret = subprocess.call(['emacs', './README.md'])
+if ret==1:
+    print('Emacs error. Cannot open README.md file.')
+    exit(1)
+
+# CREATE JAVA FILE
+f = open('./'+source+'.java', 'w')
+# create file template, use emacs like space indentation
+f.write('\nclass '+source+'{\n\n    public static void main(String args[]){\n        // Method call\n        example_'+source+'();\n\n        return;\n    }\n\n    private static void example_'+source+'(){\n        //Write your function here\n\n        return;\n    }\n\n}\n')
+f.close()
+
+ret = subprocess.call(['emacs', './'+source+'.java'])
+if ret!=0:
+    print('Error on calling emacs editor.')
+    exit(1)
+
+# COMPILE JAVA FILE
+while True:
+    ret = subprocess.call(['javac', './'+source+'.java'])
+    if ret==1:
+        print('Compilation error: fix the .java file')
+        ret = subprocess.call(['emacs', './'+source+'.java'])
+    else:
+        print('Compilation succesfully completed.')
+        break
+
+# RUN THE IGV
+err = open('./.err', 'w')
+out = open('./.out', 'w')
+igvProcess = subprocess.Popen([IGV_BIN_PATH+'/idealgraphvisualizer'], stdout=out, stderr=err)
+print('Igv started @ pid: {}'.format(igvProcess.pid))
+err.close()  # Full by igv default
+out.close()
+    
+# RUN THE NATIVE IMAGE
+print('Running native image: ')
+niCallList = ['native-image', source, '-H:+TrackNodeSourcePosition', '-H:Dump=:2', '-H:MethodFilter=example_'+source, '-H:PrintGraph=Network', '-Dgraal.LogFile=./'+source+'Graph.bgv']
+print(' '.join(niCallList))
+ret = subprocess.call(niCallList)
+if ret==1:
+    print('Error: native-image tool failed.')
+    exit(1)
+
+# CREATE GROUND TRUTH .json DESCRIPTION
+print('Create ground truth file: ')
+print('Look at your method graph (@igv)')
+with open(source+'.json', 'w') as f:
+    f.write('{\n')
+    f.write('"source": "example_{}",\n'.format(source))
+
+    print('Insert Control Splits ground truth information: [ENTER when finish]')
+    f.write('"control splits": [')
+
+    for i in itertools.count():
+        node = raw_input('Node description: ')
+        if node=='':
+            break
+        if i>0:
+            f.write(',')
+        f.write('\n{\n')
+        f.write('"node": "{}",\n'.format(node))
+        head = raw_input('Head: ')
+        f.write('"head": "{}",\n'.format(head))
+        nsons = int(raw_input('Enter number of sons: '))
+        f.write('"sons": [')
+        for j in range(nsons):
+            son = raw_input('Insert (comma separated blocks): ')
+            if j==nsons-1:
+                f.write('"{}"'.format(son))
+            else:
+                f.write('"{}", '.format(son))
+        f.write(']\n}')
+    f.write(']\n}')
+print('Created ground truth file {}.json'.format(source))
+
+# CLOSE THE IGV, DEL TEMP
+print('Cleaning created directory..')
+igvProcess.terminate()
+subprocess.Popen(['rm', '-f', source, source+'.class', '.err', '.out'])
+subprocess.Popen(['rm', '-rf', 'graal_dumps'])
+subprocess.Popen(['rm -rf *~ important*'], shell=True)
+
+# FINISH SCRIPT
+print('Created feature test saved at: {}'.format(os.path.join(DB_PATH), source))        

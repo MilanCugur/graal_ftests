@@ -1,0 +1,32 @@
+#!/usr/bin/python
+
+import sys
+import os
+
+if len(sys.argv)!=2:
+    print('Error, wrong call: ./printftest DB_PATH')
+    exit(1)
+
+DB_PATH = sys.argv[1]
+    
+if not os.path.isdir(DB_PATH):
+    print('Error {} must be valid path to feature tests database.'.format(DB_PATH))
+    exit(1)
+
+tests = os.listdir(DB_PATH)
+tests.sort()
+for test in tests:
+    testpath = os.path.join(DB_PATH, test)
+    content = os.listdir(testpath)
+    candidates = map(lambda x: x.split('.')[0], filter(lambda x: x.endswith('.java'), content))
+    filenames = [candidate for candidate in candidates if candidate+'.json' in content]
+    if len(filenames)==1:
+        filename = filenames[0]
+        print('TEST {} -> '.format(test)),
+        if 'README.md' in content:
+            with open(os.path.join(testpath, './README.md'), 'r') as r:
+                print(r.read().strip())
+        else:
+            print('no detailed informations.')
+    else:
+        print('Folder {} not valid feature directory, number of valid feature tests inside: {}.'.format(test, len(filenames)))

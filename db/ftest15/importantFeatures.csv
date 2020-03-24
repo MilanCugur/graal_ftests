@@ -1,0 +1,4 @@
+Graph Id,Source Function,Node Description,Node Id,Node BCI,head
+48094,"example_ftest15",12|If,12,7,B1,"[B2, B3]","[B4, B5]"
+48094,"example_ftest15",43|If,43,30,B8,"[B9]","[B10, B11]"
+48094,"example_ftest15",8|If,8,2,B0,"[B1, B2, B3, B4, B5, B6, B7]","[B8, B9, B10, B11]"

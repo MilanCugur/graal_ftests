@@ -1,0 +1,1 @@
+Function example_ftest24: test returning if and do-while loop on the same level.
