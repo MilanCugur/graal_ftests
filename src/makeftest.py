@@ -4,7 +4,6 @@ import itertools
 import sys
 import re
 import subprocess
-import termcolor
 
 """
 Call: python createFeatureTest.py DB_PATH IGV_BIN_PATH
@@ -15,8 +14,7 @@ if len(sys.argv)!=3:
     print('Make feature test tool call: $./makeftest DB_PATH IGV_BIN_PATH')
     exit(1)
     
-print('Welcome to "features tests" creator.')
-print(termcolor.colored('Ensure you have emacs and native-image tool preinstalled.\n', 'red'))
+print('Welcome to "features tests" creator.\nEnsure you have emacs and native-image tool preinstalled.\n\n')
 
 DB_PATH = sys.argv[1]
 IGV_BIN_PATH = sys.argv[2]
@@ -70,6 +68,10 @@ while True:
         print('Compilation succesfully completed.')
         break
 
+name = raw_input('Insert name of the target function [ENTER TO KEEP example_{}]:'.format(source))
+if name=='':
+    name = "example_{}".format(source)
+    
 # RUN THE IGV
 err = open('./.err', 'w')
 out = open('./.out', 'w')
@@ -80,7 +82,7 @@ out.close()
     
 # RUN THE NATIVE IMAGE
 print('Running native image: ')
-niCallList = ['native-image', source, '-H:+TrackNodeSourcePosition', '-H:Dump=:2', '-H:MethodFilter=example_'+source, '-H:PrintGraph=Network', '-Dgraal.LogFile=./'+source+'Graph.bgv']
+niCallList = ['native-image', source, '-H:+TrackNodeSourcePosition', '-H:Dump=:2', '-H:MethodFilter='+name, '-H:PrintGraph=Network', '-Dgraal.LogFile=./'+source+'Graph.bgv']
 print(' '.join(niCallList))
 ret = subprocess.call(niCallList)
 if ret==1:
@@ -92,7 +94,7 @@ print('Create ground truth file: ')
 print('Look at your method graph (@igv)')
 with open(source+'.json', 'w') as f:
     f.write('{\n')
-    f.write('"source": "example_{}",\n'.format(source))
+    f.write('"source": "{}",\n'.format(name))
 
     print('Insert Control Splits ground truth information: [ENTER when finish]')
     f.write('"control splits": [')
@@ -123,7 +125,7 @@ print('Created ground truth file {}.json'.format(source))
 print('Cleaning created directory..')
 igvProcess.terminate()
 subprocess.Popen(['rm', '-f', source, source+'.class', '.err', '.out'])
-subprocess.Popen(['rm', '-rf', source+'Graph.bgv', 'graal_dumps'])  # save graph file
+subprocess.Popen(['rm', '-rf', 'graal_dumps'])
 subprocess.Popen(['rm -rf *~ important*'], shell=True)
 
 # FINISH SCRIPT
