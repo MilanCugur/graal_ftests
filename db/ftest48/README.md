@@ -1,0 +1,1 @@
+Function example_ftest48[a/b]: test if and switch simple code compare.
