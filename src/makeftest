@@ -70,6 +70,10 @@ while True:
         print('Compilation succesfully completed.')
         break
 
+name = raw_input('Insert name of the target function [ENTER TO KEEP example_{}]:'.format(source))
+if name=='':
+    name = "example_{}".format(source)
+    
 # RUN THE IGV
 err = open('./.err', 'w')
 out = open('./.out', 'w')
@@ -80,7 +84,7 @@ out.close()
     
 # RUN THE NATIVE IMAGE
 print('Running native image: ')
-niCallList = ['native-image', source, '-H:+TrackNodeSourcePosition', '-H:Dump=:2', '-H:MethodFilter=example_'+source, '-H:PrintGraph=Network', '-Dgraal.LogFile=./'+source+'Graph.bgv']
+niCallList = ['native-image', source, '-H:+TrackNodeSourcePosition', '-H:Dump=:2', '-H:MethodFilter='+name, '-H:PrintGraph=Network', '-Dgraal.LogFile=./'+source+'Graph.bgv']
 print(' '.join(niCallList))
 ret = subprocess.call(niCallList)
 if ret==1:
@@ -92,7 +96,7 @@ print('Create ground truth file: ')
 print('Look at your method graph (@igv)')
 with open(source+'.json', 'w') as f:
     f.write('{\n')
-    f.write('"source": "example_{}",\n'.format(source))
+    f.write('"source": "{}",\n'.format(name))
 
     print('Insert Control Splits ground truth information: [ENTER when finish]')
     f.write('"control splits": [')

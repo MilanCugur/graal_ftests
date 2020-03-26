@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+class ftest6{
+
+    public static void main(String args[]){
+        // Method call
+	Scanner sc = new Scanner(System.in);
+	example_ftest6(sc.nextInt(), sc.nextInt());
+
+        return;
+    }
+
+    private static void example_ftest6(int a, int b){
+
+	switch(a){  // B0
+	case 1:
+	    System.out.println();  // B1, B2
+	    break;
+	case 2: // B3
+	    break;
+	default:
+	    System.out.println("def");  // B6, B7
+	    return;
+	}
+	System.console();  // B4, B5
+    }
+    
+}

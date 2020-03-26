@@ -1,0 +1,14 @@
+{
+"source": "example_ftest46",
+"control splits": [
+{
+"node": "64|If",
+"head": "B7",
+"sons": ["B8, B9", "B10, B11"]
+},
+{
+"node": "4|IntegerSwitch",
+"head": "B0",
+"sons": ["B1, B2", "B3, B4", "B5, B6", "B14, B15", "B16"]
+}]
+}

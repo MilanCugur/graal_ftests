@@ -1,0 +1,19 @@
+{
+"source": "example_ftest39",
+"control splits": [
+{
+"node": "60|If",
+"head": "B13",
+"sons": ["B14, B15", "B16, B17"]
+},
+{
+"node": "13|IntegerSwitch",
+"head": "B2",
+"sons": ["B3, B4, B6, B7, B9, B10", "B5, B6, B7, B9, B10", "B8, B9, B10", "B11"]
+},
+{
+"node": "11|If",
+"head": "B0",
+"sons": ["B1", "B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17"]
+}]
+}

@@ -1,0 +1,4 @@
+Graph Id,Source Function,Node Description,Node Id,Node BCI,head
+48393,"example_ftest43",23|If,23,10,B2,"[B3, B4]","[B5]"
+48393,"example_ftest43",84|If,84,60,B10,"[B11, B12]","x(81|LoopExit)"
+48393,"example_ftest43",44|IntegerSwitch,44,28,B8,"[B20, B21, B22, B23]","[B17]","[B14, B15, B16]","[B9, B10, B11, B12, B13, B15, B16]"

@@ -1,0 +1,9 @@
+{
+"source": "example_ftest40",
+"control splits": [
+{
+"node": "3|IntegerSwitch",
+"head": "B0",
+"sons": ["B3", "B6, B7", "B1, B2"]
+}]
+}

@@ -14,9 +14,9 @@ class ftest6{
         //Write your function here
 	switch(a){
 	case 1:
-	    System.console();
+	    System.out.println();
 	case 2:
-	    System.out.println("2");
+	    System.console();
 	    break;
 	case 3:
 	    System.out.println("3");
