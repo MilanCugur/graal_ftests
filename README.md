@@ -1,4 +1,4 @@
-TESTING **Parse Important Features Graal Compiler Phase**: description of the features tests
+**Parse Important Features Graal Compiler Phase** tests database: description of the feature tests 
 
 * For running our test please use mx tool (just invoke: **mx gate --tags features --features_dir PATH_TO_TESTS_DB**)
 
