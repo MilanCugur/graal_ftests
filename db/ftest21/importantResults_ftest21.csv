@@ -1,5 +1,0 @@
-Graph Id,Source Function,Node Description,Node Id,Node BCI,head,Valid Control Split
-48580,example_ftest21,20|If,38,26,B6,True
-48580,example_ftest21,20|If,29,17,B4,True
-48580,example_ftest21,20|If,20,8,B2,True
-Summary:,True,,,,,

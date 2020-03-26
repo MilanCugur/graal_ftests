@@ -1,3 +1,0 @@
-Graph Id,Source Function,Node Description,Node Id,Node BCI,head
-48127,"example_ftest42",27|IntegerSwitch,27,17,B4,"[B5, B6]","[B16, B17]","[B12, B13, B14]","[B9, B10, B11]","[B7, B8]"
-48127,"example_ftest42",25|If,25,12,B2,"[B3]","[B4, B5, B6, B16, B17, B12, B13, B14, B9, B10, B11, B7, B8, B15, B18, B19, B20]"

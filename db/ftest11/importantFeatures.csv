@@ -1,4 +1,0 @@
-Graph Id,Source Function,Node Description,Node Id,Node BCI,head
-47684,"example_ftest11",13|If,13,-4,B3,"[B4]","[B8]"
-47684,"example_ftest11",60|Invoke#Throwable.fillInStackTrace,60,24,B1,"[B2]","[B3, B4, B8]"
-47684,"example_ftest11",7|If,7,4,B0,"[B9]","[B1, B2, B3, B4, B8, B5, B6, B7]"

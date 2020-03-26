@@ -1,0 +1,34 @@
+#!/usr/bin/python
+
+import sys
+import os
+import subprocess
+
+if len(sys.argv)!=2:
+    print('Error, wrong call: ./printftest DB_PATH')
+    exit(1)
+
+DB_PATH = os.path.abspath(sys.argv[1])
+print(DB_PATH)
+    
+if not os.path.isdir(DB_PATH):
+    print('Error {} must be valid path to feature tests database.'.format(DB_PATH))
+    exit(1)
+
+tests = filter(lambda x: os.path.isdir(os.path.join(DB_PATH, x)), os.listdir(DB_PATH))
+print(tests)
+print(os.path.abspath(DB_PATH))
+
+for test in tests:
+    testpath = os.path.join(DB_PATH, test)
+    os.chdir(testpath)
+    
+    content = os.listdir(testpath)
+    candidates = map(lambda x: x.split('.')[0], filter(lambda x: x.endswith('.java'), content))
+    filenames = [candidate for candidate in candidates if candidate+'.json' in content]
+    for filename in filenames:
+    	subprocess.Popen(['rm', '-f', filename, filename+'.class', '.err', '.out'])
+    subprocess.Popen(['rm', '-rf', 'graal_dumps'])
+    subprocess.Popen(['rm -rf *~ important* FeaturesTesting*'], shell=True)
+    print('Directory {} cleaned.'.format(test))
+    
