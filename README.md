@@ -13,10 +13,10 @@ TESTING **Parse Important Features Graal Compiler Phase**: description of the fe
   Folder must contains JAVA file and GROUND TRUTH file which must share the same name ($.java and $.json)
   
 	* *JAVA file*:
-	       casual java file containing test function
+	       casual java file containing test functions 
 
 	* *GROUND TRUTH file*:
-		jason based, contains fields:
+		jason based, contains list of dict (one dict per test function) with fields:
   		* "source": (name of the test function)
   		* "control splits": represent list of the Control Splits data, each contains fields:
   
