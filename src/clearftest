@@ -29,6 +29,6 @@ for test in tests:
     for filename in filenames:
     	subprocess.Popen(['rm', '-f', filename, filename+'.class', '.err', '.out'])
     subprocess.Popen(['rm', '-rf', 'graal_dumps'])
-    subprocess.Popen(['rm -rf *~ important* FeaturesTesting*'], shell=True)
+    subprocess.Popen(['rm -rf *~ important* *.bgv FeaturesTesting*'], shell=True)
     print('Directory {} cleaned.'.format(test))
     
