@@ -1,9 +1,13 @@
 {
-"source": "example_ftest3",
-"control splits": [
-{
-"node": "7|If",
-"head": "B0",
-"sons": ["B3", "B1, B2"]
-}]
+    "control splits": [
+        {
+            "head": "B0",
+            "node": "7|If",
+            "sons": [
+                "B3--null",
+                "B1, B2--null"
+            ]
+        }
+    ],
+    "source": "example_ftest3"
 }

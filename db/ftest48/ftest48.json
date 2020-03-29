@@ -1,30 +1,42 @@
-[
-    {
-	"source": "example_ftest48a",
-	"control splits": [
-	    {
-		"node": "19|IntegerSwitch",
-		"head": "B2",
-		"sons": ["B3, B4", "B5"]
-	    },
-	    {
-		"node": "67|If",
-		"head": "B10",
-		"sons": ["B11, B12", "B13"]
-	    }]
-    },
-    {
-	"source": "example_ftest48b",
-	"control splits": [
-	    {
-		"node": "19|IntegerSwitch",
-		"head": "B2",
-		"sons": ["B3, B4", "B5, B6"]
-	    },
-	    {
-		"node": "75|If",
-		"head": "B11",
-		"sons": ["B12, B13", "B14, B15"]
-	    }]
-    }
-]
+[{
+    "control splits": [
+        {
+            "head": "B2",
+            "node": "19|IntegerSwitch",
+            "sons": [
+                "B5--null",
+                "B3, B4--null"
+            ]
+        },
+        {
+            "head": "B10",
+            "node": "67|If",
+            "sons": [
+		"B13--null",
+		"B11, B12--null"
+            ]
+        }
+    ],
+    "source": "example_ftest48a"
+},
+ {
+    "control splits": [
+        {
+            "head": "B2",
+            "node": "19|IntegerSwitch",
+            "sons": [
+                "B5, B6--null",
+                "B3, B4--null"
+            ]
+        },
+        {
+            "head": "B11",
+            "node": "75|If",
+            "sons": [
+		"B12, B13--null",
+		"B14, B15--null"
+            ]
+        }
+    ],
+    "source": "example_ftest48b"
+}]

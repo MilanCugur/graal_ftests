@@ -1,0 +1,31 @@
+{
+    "control splits": [
+        {
+            "head": "B3",
+            "node": "43|If",
+            "sons": [
+                "B4, B5--null",
+                "x(40|LoopExit)--null"
+            ]
+        },
+        {
+            "head": "B8",
+            "node": "21|If",
+            "sons": [
+                "B9, B10--null",
+                "x(18|LoopExit)--null"
+            ]
+        },
+        {
+            "head": "B0",
+            "node": "4|IntegerSwitch",
+            "sons": [
+                "B1--null",
+                "B12--B13, B14, B15",
+                "B2, B3, B4, B5, B6--B13, B14, B15",
+                "B7, B8, B9, B10, B11--B13, B14, B15"
+            ]
+        }
+    ],
+    "source": "example_ftest64"
+}

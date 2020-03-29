@@ -1,19 +1,29 @@
 {
-"source": "example_ftest21",
-"control splits": [
-{
-"node": "38|If",
-"head": "B6",
-"sons": ["x(35|LoopExit)", "B7, B8, B9, B10"]
-},
-{
-"node": "29|If",
-"head": "B4",
-"sons": ["x(26|LoopExit)", "B5, B6, B7, B8, B9, B10, B11"]
-},
-{
-"node": "20|If",
-"head": "B2",
-"sons": ["x(17|LoopExit)", "B3, B4, B5, B6, B7, B8, B9, B10, B11, B12"]
-}]
+    "control splits": [
+        {
+            "head": "B6",
+            "node": "38|If",
+            "sons": [
+                "x(35|LoopExit)--null",
+                "B7, B8, B9, B10--null"
+            ]
+        },
+        {
+            "head": "B4",
+            "node": "29|If",
+            "sons": [
+                "x(26|LoopExit)--null",
+                "B5, B6, B7, B8, B9, B10, B11--null"
+            ]
+        },
+        {
+            "head": "B2",
+            "node": "20|If",
+            "sons": [
+                "x(17|LoopExit)--null",
+                "B3, B4, B5, B6, B7, B8, B9, B10, B11, B12--null"
+            ]
+        }
+    ],
+    "source": "example_ftest21"
 }

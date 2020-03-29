@@ -1,0 +1,13 @@
+{
+    "control splits": [
+        {
+            "head": "B1",
+            "node": "15|If",
+            "sons": [
+                "B2--null",
+                "B3--null"
+            ]
+        }
+    ],
+    "source": "example_ftest66"
+}

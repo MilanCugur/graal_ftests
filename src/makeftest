@@ -126,6 +126,9 @@ print('Created ground truth file {}.json'.format(source))
 # CLOSE THE IGV, DEL TEMP
 print('Cleaning created directory..')
 igvProcess.terminate()
+
+subprocess.Popen(['cat {}.json | python -m json.tool > tmp.json'.format(source)], shell=True)  # format .json file
+subprocess.Popen(['mv tmp.json {}.json'.format(source)], shell=True)  
 subprocess.Popen(['rm', '-f', source, source+'.class', '.err', '.out'])
 subprocess.Popen(['rm', '-rf', 'graal_dumps'])
 subprocess.Popen(['rm -rf *~ important*'], shell=True)

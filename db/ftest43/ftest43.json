@@ -1,19 +1,31 @@
 {
-"source": "example_ftest43",
-"control splits": [
-{
-"node": "23|If",
-"head": "B2",
-"sons": ["B3, B4", "B5"]
-},
-{
-"node": "84|If",
-"head": "B10",
-"sons": ["x(81|LoopExit)", "B11, B12"]
-},
-{
-"node": "44|IntegerSwitch",
-"head": "B8",
-"sons": ["B20, B21, B22, B23", "B17", "B14, B15, B16", "B9, B10, B11, B12, B13, B15, B16"]
-}]
+    "control splits": [
+        {
+            "head": "B2",
+            "node": "23|If",
+            "sons": [
+                "B3, B4--null",
+                "B5--null"
+            ]
+        },
+        {
+            "head": "B10",
+            "node": "84|If",
+            "sons": [
+                "x(81|LoopExit)--null",
+                "B11, B12--null"
+            ]
+        },
+        {
+            "head": "B8",
+            "node": "44|IntegerSwitch",
+            "sons": [
+                "B20, B21, B22, B23--null",
+                "B17--B18, B19",
+                "B14, B15, B16--B18, B19",
+                "B9, B10, B11, B12, B13, B15, B16--B18, B19"
+            ]
+        }
+    ],
+    "source": "example_ftest43"
 }

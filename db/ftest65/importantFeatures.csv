@@ -1,0 +1,4 @@
+Graph Id,Source Function,Node Description,Cardinality,Node Id,Node BCI,head
+48048,"example_ftest65",38|If,2,38,17,B6,"[B7, B8][null]","[B9][null]"
+48048,"example_ftest65",33|If,2,33,13,B4,"[B5][null]","[B6, B7, B8, B9][null]"
+48048,"example_ftest65",26|If,2,26,9,B2,"[B3][null]","[B4, B5, B6, B7, B8, B9][null]"

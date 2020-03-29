@@ -1,0 +1,37 @@
+{
+    "control splits": [
+        {
+            "node": "41|If", 
+            "head": "B6", 
+            "sons": [
+                "B7--null", 
+                "B8--null"
+            ]
+        }, 
+        {
+            "node": "26|If", 
+            "head": "B4", 
+            "sons": [
+                "B5--null", 
+                "B6, B7, B8--null"
+            ]
+        }, 
+        {
+            "node": "22|If", 
+            "head": "B3", 
+            "sons": [
+                "x(18|LoopExit)--null", 
+                "B4, B5, B6, B7, B8--null"
+            ]
+        }, 
+        {
+            "node": "8|If", 
+            "head": "B0", 
+            "sons": [
+                "B1--null", 
+                "B2, B3, B4, B5, B6, B7, B8, B9--null"
+            ]
+        }
+    ], 
+    "source": "example_ftest32"
+}

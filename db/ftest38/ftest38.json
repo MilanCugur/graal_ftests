@@ -1,9 +1,15 @@
 {
-"source": "example_ftest38",
-"control splits": [
-{
-"node": "3|IntegerSwitch",
-"head": "B0",
-"sons": ["B1, B2, B4, B5, B7, B8", "B3, B4, B5, B7, B8", "B6, B7, B8", "B9"]
-}]
+    "control splits": [
+        {
+            "head": "B0",
+            "node": "3|IntegerSwitch",
+            "sons": [
+                "B1, B2, B4, B5, B7, B8--null",
+                "B3, B4, B5, B7, B8--null",
+                "B6, B7, B8--null",
+                "B9--null"
+            ]
+        }
+    ],
+    "source": "example_ftest38"
 }

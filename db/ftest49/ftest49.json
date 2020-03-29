@@ -1,0 +1,22 @@
+{
+    "control splits": [
+        {
+            "head": "B0",
+            "node": "7|If",
+            "sons": [
+                "B10, B11, B12--null",
+                "B1, B2, B3, B4, B5, B6, B7, B8, B9--null"
+            ]
+        },
+        {
+            "head": "B1",
+            "node": "8|IntegerSwitch",
+            "sons": [
+                "B2, B3--null",
+                "B4, B5--null",
+                "B6, B7--null"
+            ]
+        }
+    ],
+    "source": "example_ftest49"
+}

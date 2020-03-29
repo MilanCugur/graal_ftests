@@ -1,24 +1,37 @@
 {
-"source": "example_ftest32",
-"control splits": [
-{
-"node": "41|If",
-"head": "B6",
-"sons": ["B7", "B8"]
-},
-{
-"node": "26|If",
-"head": "B4",
-"sons": ["B5", "B6, B7, B8"]
-},
-{
-"node": "22|If",
-"head": "B3",
-"sons": ["x(18|LoopExit)", "B4, B5, B6, B7, B8"]
-},
-{
-"node": "8|If",
-"head": "B0",
-"sons": ["B1", "B2, B3, B4, B5, B6, B7, B8, B9"]
-}]
+    "control splits": [
+        {
+            "head": "B6",
+            "node": "41|If",
+            "sons": [
+                "B7--null",
+                "B8--null"
+            ]
+        },
+        {
+            "head": "B4",
+            "node": "26|If",
+            "sons": [
+                "B5--null",
+                "B6, B7, B8--null"
+            ]
+        },
+        {
+            "head": "B3",
+            "node": "22|If",
+            "sons": [
+                "x(18|LoopExit)--null",
+                "B4, B5, B6, B7, B8--null"
+            ]
+        },
+        {
+            "head": "B0",
+            "node": "8|If",
+            "sons": [
+                "B1--null",
+                "B2, B3, B4, B5, B6, B7, B8, B9--null"
+            ]
+        }
+    ],
+    "source": "example_ftest32"
 }

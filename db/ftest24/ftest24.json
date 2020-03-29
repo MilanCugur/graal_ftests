@@ -1,14 +1,21 @@
 {
-"source": "example_ftest24",
-"control splits": [
-{
-"node": "42|If",
-"head": "B5",
-"sons": ["x(38|LoopExit)", "B6"]
-},
-{
-"node": "7|If",
-"head": "B0",
-"sons": ["B1", "B2, B3, B4, B5, B6, B7, B8"]
-}]
+    "control splits": [
+        {
+            "head": "B5",
+            "node": "42|If",
+            "sons": [
+                "x(38|LoopExit)--null",
+                "B6--null"
+            ]
+        },
+        {
+            "head": "B0",
+            "node": "7|If",
+            "sons": [
+                "B1--null",
+                "B2, B3, B4, B5, B6, B7, B8--null"
+            ]
+        }
+    ],
+    "source": "example_ftest24"
 }

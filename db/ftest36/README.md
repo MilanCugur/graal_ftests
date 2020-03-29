@@ -1,1 +1,1 @@
-Function example_ftest36: basic synchronised block.
+Function example_ftest36: test basic synchronised block.

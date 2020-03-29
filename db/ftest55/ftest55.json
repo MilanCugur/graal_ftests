@@ -1,0 +1,31 @@
+{
+    "control splits": [
+        {
+            "head": "B0",
+            "node": "7|If",
+            "sons": [
+                "B15, B16, B17--null",
+                "B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14--null"
+            ]
+        },
+        {
+            "head": "B1",
+            "node": "8|IntegerSwitch",
+            "sons": [
+                "B2, B3--null",
+                "B4, B5--B18, B19, B20",
+                "B12, B13, B14--B18, B19, B20",
+                "B6, B7, B8, B9, B10, B11, B13, B14--B18, B19, B20"
+            ]
+        },
+        {
+            "head": "B7",
+            "node": "23|If",
+            "sons": [
+                "B8, B9--null",
+                "B10, B11--null"
+            ]
+        }
+    ],
+    "source": "example_ftest55"
+}
