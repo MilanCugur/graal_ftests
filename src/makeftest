@@ -1,5 +1,4 @@
 #!/usr/bin/python
-
 import json
 import os
 import itertools
@@ -84,7 +83,7 @@ out.close()
     
 # RUN THE NATIVE IMAGE
 print('Running native image: ')
-niCallList = ['native-image', source, '-H:+TrackNodeSourcePosition', '-H:Dump=:2', '-H:MethodFilter='+name, '-H:PrintGraph=Network', '-Dgraal.LogFile=./'+source+'Graph.bgv']
+niCallList = ['native-image', source, '-H:+TrackNodeSourcePosition', '-H:+ParseImportantFeatures', '-H:Dump=:2', '-H:MethodFilter='+name, '-H:PrintGraph=Network', '-Dgraal.LogFile=./'+source+'Graph.bgv']
 print(' '.join(niCallList))
 ret = subprocess.call(niCallList)
 if ret==1:

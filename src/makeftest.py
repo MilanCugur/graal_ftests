@@ -82,7 +82,7 @@ out.close()
     
 # RUN THE NATIVE IMAGE
 print('Running native image: ')
-niCallList = ['native-image', source, '-H:+TrackNodeSourcePosition', '-H:Dump=:2', '-H:MethodFilter='+name, '-H:PrintGraph=Network', '-Dgraal.LogFile=./'+source+'Graph.bgv']
+niCallList = ['native-image', source, '-H:+TrackNodeSourcePosition', '-H:+ParseImportantFeatures', '-H:Dump=:2', '-H:MethodFilter='+name, '-H:PrintGraph=Network', '-Dgraal.LogFile=./'+source+'Graph.bgv']
 print(' '.join(niCallList))
 ret = subprocess.call(niCallList)
 if ret==1:
@@ -124,6 +124,9 @@ print('Created ground truth file {}.json'.format(source))
 # CLOSE THE IGV, DEL TEMP
 print('Cleaning created directory..')
 igvProcess.terminate()
+
+subprocess.Popen(['cat {}.json | python -m json.tool > tmp.json'.format(source)], shell=True)  # format .json file
+subprocess.Popen(['mv tmp.json {}.json'.format(source)], shell=True)  
 subprocess.Popen(['rm', '-f', source, source+'.class', '.err', '.out'])
 subprocess.Popen(['rm', '-rf', 'graal_dumps'])
 subprocess.Popen(['rm -rf *~ important*'], shell=True)
