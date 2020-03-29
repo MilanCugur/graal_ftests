@@ -1,2 +1,0 @@
-Graph Id,Source Function,Node Description,Cardinality,Node Id,Node BCI,head
-48205,"example_ftest7",12|If,2,12,4,B1,"[B2, B3][null]","[x(9|LoopExit)][null]"

@@ -22,7 +22,7 @@
   
 			* "node" (node description in format nodeBCI|ControlSplitType; ex. "15|If")
 			* "head" (Control Splits corresponding block; ex. "B1")
-			* "sons" (Sons are represented as a list of comma separated strings which represent branch blocks; ex. ["B2, B3", "B4, B5", "x(loopExitNodeBCI|LoopExit)"])
+			* "sons" (Sons are represented as a list of comma separated strings which represent branch blocks; ex. ["B2, B3--tail blocks", "B4, B5--tail blocks", "x(loopExitNodeBCI|LoopExit)--tail blocks"])
 
   (suggested FOLDERNAME are "ftest[0-9]+"; suggested test function name are "example_FOLDERNAME", but these recommendations not need to be followed)
 
