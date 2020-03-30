@@ -1,0 +1,2 @@
+Graph Id,Source Function,Node Description,Cardinality,Node Id,Node BCI,head
+48033,"example_ftest38",3|IntegerSwitch,4,3,1,B0,"[B1, B2, B4, B5, B7, B8][null]","[B9][null]","[B6, B7, B8][null]","[B3, B4, B5, B7, B8][null]"

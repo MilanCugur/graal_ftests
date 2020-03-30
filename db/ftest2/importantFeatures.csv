@@ -1,0 +1,13 @@
+Graph Id,Source Function,Node Description,Cardinality,Node Id,Node BCI,head
+47823,"example_ftest2",23|If,2,23,15,B2,"[B3, B4][null]","[B5][null]"
+47823,"example_ftest2",16|If,2,16,10,B1,"[B6][null]","[B2, B3, B4, B5][null]"
+47823,"example_ftest2",46|If,2,46,36,B8,"[B9, B10][null]","[B11][null]"
+47823,"example_ftest2",39|If,2,39,31,B7,"[B12][null]","[B8, B9, B10, B11][null]"
+47823,"example_ftest2",65|If,2,65,57,B14,"[B15, B16][null]","[B17][null]"
+47823,"example_ftest2",59|If,2,59,52,B13,"[B18][null]","[B14, B15, B16, B17][null]"
+47823,"example_ftest2",84|If,2,84,78,B20,"[B21, B22][null]","[B23][null]"
+47823,"example_ftest2",77|If,2,77,73,B19,"[B24][null]","[B20, B21, B22, B23][null]"
+47823,"example_ftest2",102|If,2,102,99,B26,"[B27, B28][null]","[B29][null]"
+47823,"example_ftest2",96|If,2,96,94,B25,"[B30][null]","[B26, B27, B28, B29][null]"
+47823,"example_ftest2",120|If,2,120,120,B32,"[B33, B34][null]","[B35][null]"
+47823,"example_ftest2",114|If,2,114,115,B31,"[B36][null]","[B32, B33, B34, B35][null]"

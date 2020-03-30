@@ -1,0 +1,4 @@
+Graph Id,Source Function,Node Description,Node Id,Node BCI,head,Valid Control Split
+47827,example_ftest62,20|IntegerSwitch,54,51,B4,True
+47827,example_ftest62,20|IntegerSwitch,20,9,B2,True
+Summary:,True,,,,,
