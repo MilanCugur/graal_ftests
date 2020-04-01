@@ -1,0 +1,1845 @@
+[{
+    "control splits": [
+        {
+            "head": "B0",
+            "node": "7|If",
+            "sons": [
+                "B1, B2--null",
+                "B3, B4--null"
+            ]
+        }
+    ],
+    "source": "example_ftest1"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B32",
+            "node": "120|If",
+            "sons": [
+                "B35--null",
+                "B33, B34--null"
+            ]
+        },
+        {
+            "head": "B31",
+            "node": "114|If",
+            "sons": [
+                "B36--null",
+                "B32, B33, B34, B35--null"
+            ]
+        },
+        {
+            "head": "B26",
+            "node": "102|If",
+            "sons": [
+                "B29--null",
+                "B27, B28--null"
+            ]
+        },
+        {
+            "head": "B25",
+            "node": "96|If",
+            "sons": [
+                "B30--null",
+                "B26, B27, B28, B29--null"
+            ]
+        },
+        {
+            "head": "B20",
+            "node": "84|If",
+            "sons": [
+                "B23--null",
+                "B21, B22--null"
+            ]
+        },
+        {
+            "head": "B19",
+            "node": "77|If",
+            "sons": [
+                "B20, B21, B22, B23--null",
+                "B24--null"
+            ]
+        },
+        {
+            "head": "B14",
+            "node": "65|If",
+            "sons": [
+                "B17--null",
+                "B15, B16--null"
+            ]
+        },
+        {
+            "head": "B13",
+            "node": "59|If",
+            "sons": [
+                "B18--null",
+                "B14, B15, B16, B17--null"
+            ]
+        },
+        {
+            "head": "B8",
+            "node": "46|If",
+            "sons": [
+                "B9, B10--null",
+                "B11--null"
+            ]
+        },
+        {
+            "head": "B7",
+            "node": "39|If",
+            "sons": [
+                "B12--null",
+                "B8, B9, B10, B11--null"
+            ]
+        },
+        {
+            "head": "B2",
+            "node": "23|If",
+            "sons": [
+                "B3, B4--null",
+                "B5--null"
+            ]
+        },
+        {
+            "head": "B1",
+            "node": "16|If",
+            "sons": [
+                "B6--null",
+                "B2, B3, B4, B5--null"
+            ]
+        }
+    ],
+    "source": "example_ftest2"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B0",
+            "node": "7|If",
+            "sons": [
+                "B3--null",
+                "B1, B2--null"
+            ]
+        }
+    ],
+    "source": "example_ftest3"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B0",
+            "node": "7|If",
+            "sons": [
+                "B1, B2, B3, B4, B5--null",
+                "B6--null"
+            ]
+        }
+    ],
+    "source": "example_ftest4"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B0",
+            "node": "3|IntegerSwitch",
+            "sons": [
+                "B2, B1--null",
+                "B3, B4--null",
+                "B5, B6--null"
+            ]
+        }
+    ],
+    "source": "example_ftest5"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B0",
+            "node": "3|IntegerSwitch",
+            "sons": [
+                "B6, B7--null",
+                "B8, B9--B10, B11, B12",
+                "B3, B4, B5--B10, B11, B12",
+                "B1, B2, B4, B5--B10, B11, B12"
+            ]
+        }
+    ],
+    "source": "example_ftest6"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B1",
+            "node": "12|If",
+            "sons": [
+                "B2, B3--null",
+                "x(9|LoopExit)--null"
+            ]
+        }
+    ],
+    "source": "example_ftest7"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B1",
+            "node": "12|If",
+            "sons": [
+                "B2, B3--null",
+                "x(9|LoopExit)--null"
+            ]
+        }
+    ],
+    "source": "example_ftest8"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B2",
+            "node": "25|If",
+            "sons": [
+                "B5--null",
+                "x(22|LoopExit)--null"
+            ]
+        }
+    ],
+    "source": "example_ftest9"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B0",
+            "node": "7|If",
+            "sons": [
+                "B4, B5--null",
+                "B1, B2, B3--null"
+            ]
+        }
+    ],
+    "source": "example_ftest10"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B3",
+            "node": "13|If",
+            "sons": [
+                "B4--null",
+                "B8--null"
+            ]
+        },
+        {
+            "head": "B1",
+            "node": "60|Invoke#Throwable.fillInStackTrace",
+            "sons": [
+                "B2--null",
+                "B3, B4, B8--null"
+            ]
+        },
+        {
+            "head": "B0",
+            "node": "7|If",
+            "sons": [
+                "B9--null",
+                "B1, B3, B4, B8, B2, B5, B6, B7--null"
+            ]
+        }
+    ],
+    "source": "example_ftest11"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B0",
+            "node": "3|IntegerSwitch",
+            "sons": [
+                "B1, B2, B4, B5--null",
+                "B3, B4, B5--null",
+                "B6, B7, B9, B10--null",
+                "B8, B9, B10--null",
+                "B11, B12--null"
+            ]
+        }
+    ],
+    "source": "example_ftest12"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B3",
+            "node": "25|IntegerSwitch",
+            "sons": [
+                "B4, B5, B7, B8--B13, B14, B15",
+                "B6, B8, B7--B13, B14, B15",
+                "B9, B10--null",
+                "B11, B12--B13, B14, B15"
+            ]
+        },
+        {
+            "head": "B0",
+            "node": "7|If",
+            "sons": [
+                "B16--null",
+                "B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15--null"
+            ]
+        }
+    ],
+    "source": "example_ftest13"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B9",
+            "node": "45|If",
+            "sons": [
+                "B10, B11--null",
+                "B12, B13--null"
+            ]
+        },
+        {
+            "head": "B1",
+            "node": "12|If",
+            "sons": [
+                "B2, B3--null",
+                "B4, B5--null"
+            ]
+        },
+        {
+            "head": "B0",
+            "node": "8|If",
+            "sons": [
+                "B1, B2, B3, B4, B5, B6, B7--null",
+                "B8, B9, B10, B11, B12, B13--null"
+            ]
+        }
+    ],
+    "source": "example_ftest14"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B8",
+            "node": "43|If",
+            "sons": [
+                "B9--null",
+                "B10, B11--null"
+            ]
+        },
+        {
+            "head": "B1",
+            "node": "12|If",
+            "sons": [
+                "B2, B3--null",
+                "B4, B5--null"
+            ]
+        },
+        {
+            "head": "B0",
+            "node": "8|If",
+            "sons": [
+                "B8, B9, B10, B11--null",
+                "B1, B2, B3, B4, B5, B6, B7--null"
+            ]
+        }
+    ],
+    "source": "example_ftest15"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B0",
+            "node": "8|If",
+            "sons": [
+                "B1, B2--null",
+                "B3--null"
+            ]
+        },
+        {
+            "head": "B9",
+            "node": "59|If",
+            "sons": [
+                "B10, B11--null",
+                "B12, B13--null"
+            ]
+        },
+        {
+            "head": "B21",
+            "node": "123|If",
+            "sons": [
+                "B22, B23--null",
+                "B24, B25--null"
+            ]
+        },
+        {
+            "head": "B15",
+            "node": "90|If",
+            "sons": [
+                "B16, B17--null",
+                "B18, B19--null"
+            ]
+        },
+        {
+            "head": "B6",
+            "node": "40|If",
+            "sons": [
+                "B7, B8, B9, B10, B11, B12, B13--null",
+                "B14, B15, B16, B17, B18, B19, B20, B21, B22, B23, B24, B25--null"
+            ]
+        }
+    ],
+    "source": "example_ftest16"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B11",
+            "node": "28|If",
+            "sons": [
+                "B12, B13--null",
+                "B14, B15--null"
+            ]
+        },
+        {
+            "head": "B4",
+            "node": "52|If",
+            "sons": [
+                "B5, B6--null",
+                "B7, B8--null"
+            ]
+        },
+        {
+            "head": "B2",
+            "node": "21|IntegerSwitch",
+            "sons": [
+                "B3--null",
+                "B11, B12, B13, B14, B15--B16, B17, B18",
+                "B4, B5, B6, B7, B8, B9, B10--B16, B17, B18"
+            ]
+        }
+    ],
+    "source": "example_ftest17"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B10",
+            "node": "60|If",
+            "sons": [
+                "B11, B12--null",
+                "B13, B14--null"
+            ]
+        },
+        {
+            "head": "B3",
+            "node": "25|IntegerSwitch",
+            "sons": [
+                "B4, B5--B9, B10, B11, B12, B13, B14, B15, B16",
+                "B6--null",
+                "B7, B8--B9, B10, B11, B12, B13, B14, B15, B16"
+            ]
+        },
+        {
+            "head": "B2",
+            "node": "24|If",
+            "sons": [
+                "B17, B18--null",
+                "B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16--null"
+            ]
+        }
+    ],
+    "source": "example_ftest18"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B5",
+            "node": "45|If",
+            "sons": [
+                "B6, B7--null",
+                "B8, B9--null"
+            ]
+        },
+        {
+            "head": "B3",
+            "node": "31|If",
+            "sons": [
+                "x(28|LoopExit)--null",
+                "B4, B5, B6, B7, B8, B9, B10, B11--null"
+            ]
+        }
+    ],
+    "source": "example_ftest19"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B5",
+            "node": "42|If",
+            "sons": [
+                "x(39|LoopExit)--null",
+                "B6, B7--null"
+            ]
+        },
+        {
+            "head": "B2",
+            "node": "19|If",
+            "sons": [
+                "x(16|LoopExit)--null",
+                "B3, B4, B5, B6, B7, B8, B9--null"
+            ]
+        }
+    ],
+    "source": "example_ftest20"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B6",
+            "node": "38|If",
+            "sons": [
+                "x(35|LoopExit)--null",
+                "B7, B8, B9, B10--null"
+            ]
+        },
+        {
+            "head": "B4",
+            "node": "29|If",
+            "sons": [
+                "x(26|LoopExit)--null",
+                "B5, B6, B7, B8, B9, B10, B11--null"
+            ]
+        },
+        {
+            "head": "B2",
+            "node": "20|If",
+            "sons": [
+                "x(17|LoopExit)--null",
+                "B3, B4, B5, B6, B7, B8, B9, B10, B11, B12--null"
+            ]
+        }
+    ],
+    "source": "example_ftest21"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B3",
+            "node": "23|If",
+            "sons": [
+                "x(20|LoopExit)--null",
+                "B4, B5--null"
+            ]
+        },
+        {
+            "head": "B8",
+            "node": "53|If",
+            "sons": [
+                "x(51|LoopExit)--null",
+                "B12, B13--null"
+            ]
+        },
+        {
+            "head": "B1",
+            "node": "13|If",
+            "sons": [
+                "B2, B3, B4, B5, B6--null",
+                "B7, B8, B9, B12, B13--null"
+            ]
+        }
+    ],
+    "source": "example_ftest22"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B4",
+            "node": "26|If",
+            "sons": [
+                "x(23|LoopExit)--null",
+                "B5, B6--null"
+            ]
+        },
+        {
+            "head": "B0",
+            "node": "7|If",
+            "sons": [
+                "B1--null",
+                "B2, B3, B4, B5, B6, B7, B8--null"
+            ]
+        }
+    ],
+    "source": "example_ftest23"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B5",
+            "node": "42|If",
+            "sons": [
+                "x(38|LoopExit)--null",
+                "B6--null"
+            ]
+        },
+        {
+            "head": "B0",
+            "node": "7|If",
+            "sons": [
+                "B1--null",
+                "B2, B3, B4, B5, B6, B7, B8--null"
+            ]
+        }
+    ],
+    "source": "example_ftest24"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B4",
+            "node": "39|If",
+            "sons": [
+                "x(37|LoopExit)--null",
+                "B6, B7--null"
+            ]
+        },
+        {
+            "head": "B2",
+            "node": "21|If",
+            "sons": [
+                "x(18|LoopExit)--null",
+                "B3, B4, B5, B6, B7--null"
+            ]
+        }
+    ],
+    "source": "example_ftest25"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B4",
+            "node": "38|If",
+            "sons": [
+                "B5--null",
+                "B6, B7--null"
+            ]
+        },
+        {
+            "head": "B2",
+            "node": "21|If",
+            "sons": [
+                "x(18|LoopExit)--null",
+                "B3, B4, B5, B6, B7--null"
+            ]
+        }
+    ],
+    "source": "example_ftest26"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B7",
+            "node": "55|If",
+            "sons": [
+                "B9, B10--null",
+                "x(53|LoopExit)--null"
+            ]
+        },
+        {
+            "head": "B4",
+            "node": "40|If",
+            "sons": [
+                "B6, B7, B8, B9, B10--null",
+                "x(38|LoopExit)--null"
+            ]
+        },
+        {
+            "head": "B2",
+            "node": "22|If",
+            "sons": [
+                "x(19|LoopExit)--null",
+                "B3, B4, B5, B6, B7, B8, B9, B10--null"
+            ]
+        }
+    ],
+    "source": "example_ftest27"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B7",
+            "node": "55|If",
+            "sons": [
+                "x(53|LoopExit)--null",
+                "B10, B11--null"
+            ]
+        },
+        {
+            "head": "B4",
+            "node": "40|If",
+            "sons": [
+                "x(38|LoopExit)--null",
+                "B6, B7, B8, B9, B10, B11--null"
+            ]
+        },
+        {
+            "head": "B2",
+            "node": "22|If",
+            "sons": [
+                "x(19|LoopExit)--null",
+                "B3, B4, B5, B6, B7, B10, B11, B8, B9--null"
+            ]
+        }
+    ],
+    "source": "example_ftest28"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B7",
+            "node": "54|If",
+            "sons": [
+                "B8--null",
+                "B9, B10--null"
+            ]
+        },
+        {
+            "head": "B4",
+            "node": "40|If",
+            "sons": [
+                "B6, B7, B8, B9, B10--null",
+                "x(38|LoopExit)--null"
+            ]
+        },
+        {
+            "head": "B2",
+            "node": "22|If",
+            "sons": [
+                "x(19|LoopExit)--null",
+                "B3, B4, B5, B6, B7, B8, B9, B10--null"
+            ]
+        }
+    ],
+    "source": "example_ftest29"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B4",
+            "node": "39|If",
+            "sons": [
+                "x(37|LoopExit)--null",
+                "B7, B8--null"
+            ]
+        },
+        {
+            "head": "B2",
+            "node": "21|If",
+            "sons": [
+                "x(18|LoopExit)--null",
+                "B3, B4, B5, B6, B7, B8--null"
+            ]
+        }
+    ],
+    "source": "example_ftest30"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B8",
+            "node": "56|If",
+            "sons": [
+                "B12, B13--null",
+                "x(54|LoopExit)--null"
+            ]
+        },
+        {
+            "head": "B4",
+            "node": "40|If",
+            "sons": [
+                "x(38|LoopExit)--null",
+                "B7, B8, B9, B10, B12, B13--null"
+            ]
+        },
+        {
+            "head": "B2",
+            "node": "22|If",
+            "sons": [
+                "x(19|LoopExit)--null",
+                "B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13--null"
+            ]
+        }
+    ],
+    "source": "example_ftest31"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B6",
+            "node": "41|If",
+            "sons": [
+                "B7--null",
+                "B8--null"
+            ]
+        },
+        {
+            "head": "B4",
+            "node": "26|If",
+            "sons": [
+                "B5--null",
+                "B6, B7, B8--null"
+            ]
+        },
+        {
+            "head": "B3",
+            "node": "22|If",
+            "sons": [
+                "x(18|LoopExit)--null",
+                "B4, B5, B6, B7, B8--null"
+            ]
+        },
+        {
+            "head": "B0",
+            "node": "8|If",
+            "sons": [
+                "B1--null",
+                "B2, B3, B4, B5, B6, B7, B8, B9--null"
+            ]
+        }
+    ],
+    "source": "example_ftest32"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B4",
+            "node": "10|If",
+            "sons": [
+                "B5--null",
+                "B6,  B7,  B8,  B9,  B10,  B11,  B12,  B13,  B14,  B15,  B16,  B17,  B18,  B19,  B20,  B21,  B22,  B23,  B24,  B25,  B26,  B27,  B28,  B29,  B30,  B31,  B32,  B33,  B34,  B35,  B36,  B37,  B38,  B39,  B40,  B41,  B42,  B43,  B44,  B45,  B46,  B47,  B48,  B49,  B50,  B51,  B52,  B53,  B54--null"
+            ]
+        }
+    ],
+    "source": "example_ftest33"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B2",
+            "node": "21|If",
+            "sons": [
+                "B3--null",
+                "B4--null"
+            ]
+        },
+        {
+            "head": "B1",
+            "node": "14|If",
+            "sons": [
+                "B5--null",
+                "B2, B3, B4--null"
+            ]
+        },
+        {
+            "head": "B0",
+            "node": "10|If",
+            "sons": [
+                "B8--null",
+                "B1, B2, B3, B4, B5, B6, B7--null"
+            ]
+        }
+    ],
+    "source": "example_ftest34"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B4",
+            "node": "39|If",
+            "sons": [
+                "x(37|LoopExit)--null",
+                "B6, B7, B8--null"
+            ]
+        }
+    ],
+    "source": "example_ftest35"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B0",
+            "node": "11|If",
+            "sons": [
+                "B1--null",
+                "B2, B3--null"
+            ]
+        }
+    ],
+    "source": "example_ftest36"
+}
+,
+{
+    "control splits": [],
+    "source": "example_ftest37"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B0",
+            "node": "3|IntegerSwitch",
+            "sons": [
+                "B1, B2, B4, B5, B7, B8--null",
+                "B3, B4, B5, B7, B8--null",
+                "B6, B7, B8--null",
+                "B9--null"
+            ]
+        }
+    ],
+    "source": "example_ftest38"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B13",
+            "node": "60|If",
+            "sons": [
+                "B14, B15--null",
+                "B16, B17--null"
+            ]
+        },
+        {
+            "head": "B2",
+            "node": "13|IntegerSwitch",
+            "sons": [
+                "B3, B4, B6, B7, B9, B10--null",
+                "B5, B6, B7, B9, B10--null",
+                "B8, B9, B10--null",
+                "B11--null"
+            ]
+        },
+        {
+            "head": "B0",
+            "node": "11|If",
+            "sons": [
+                "B1--null",
+                "B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17--null"
+            ]
+        }
+    ],
+    "source": "example_ftest39"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B0",
+            "node": "3|IntegerSwitch",
+            "sons": [
+                "B3--B4, B5",
+                "B6, B7--null",
+                "B1, B2--B4, B5"
+            ]
+        }
+    ],
+    "source": "example_ftest40"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B0",
+            "node": "3|IntegerSwitch",
+            "sons": [
+                "B3--B4, B5",
+                "B1, B2--B4, B5",
+                "B6, B7--null"
+            ]
+        }
+    ],
+    "source": "example_ftest41"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B4",
+            "node": "27|IntegerSwitch",
+            "sons": [
+                "B12, B13, B14--B15",
+                "B9, B10, B11--B15",
+                "B16, B17--B18, B19, B20",
+                "B5, B6--B18, B19, B20",
+                "B7, B8--B18, B19, B20"
+            ]
+        },
+        {
+            "head": "B2",
+            "node": "25|If",
+            "sons": [
+                "B3--null",
+                "B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20--null"
+            ]
+        }
+    ],
+    "source": "example_ftest42"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B2",
+            "node": "23|If",
+            "sons": [
+                "B3, B4--null",
+                "B5--null"
+            ]
+        },
+        {
+            "head": "B10",
+            "node": "84|If",
+            "sons": [
+                "x(81|LoopExit)--null",
+                "B11, B12--null"
+            ]
+        },
+        {
+            "head": "B8",
+            "node": "44|IntegerSwitch",
+            "sons": [
+                "B20, B21, B22, B23--null",
+                "B17--B18, B19",
+                "B14, B15, B16--B18, B19",
+                "B9, B10, B11, B12, B13, B15, B16--B18, B19"
+            ]
+        }
+    ],
+    "source": "example_ftest43"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B3",
+            "node": "15|IntegerSwitch",
+            "sons": [
+                "B14--B15, B16, B17, B18",
+                "B6--B7, B8",
+                "B4, B5--B7, B8",
+                "B11, B12, B13--B15, B16, B17, B18",
+                "B9, B10, B12, B13--B15, B16, B17, B18"
+            ]
+        },
+        {
+            "head": "B0",
+            "node": "7|If",
+            "sons": [
+                "B1, B2--null",
+                "B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18--null"
+            ]
+        }
+    ],
+    "source": "example_ftest44"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B7",
+            "node": "61|If",
+            "sons": [
+                "B8, B9--null",
+                "B10, B11--null"
+            ]
+        },
+        {
+            "head": "B0",
+            "node": "4|IntegerSwitch",
+            "sons": [
+                "B1, B2--B7, B8, B9, B10, B11, B12, B13",
+                "B3, B4--B7, B8, B9, B10, B11, B12, B13",
+                "B5, B6--B7, B8, B9, B10, B11, B12, B13",
+                "B14, B15--null",
+                "B16, B17--null"
+            ]
+        }
+    ],
+    "source": "example_ftest45"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B7",
+            "node": "64|If",
+            "sons": [
+                "B8, B9--null",
+                "B10, B11--null"
+            ]
+        },
+        {
+            "head": "B0",
+            "node": "4|IntegerSwitch",
+            "sons": [
+                "B1, B2--B7, B8, B9, B10, B11, B12, B13",
+                "B3, B4--B7, B8, B9, B10, B11, B12, B13",
+                "B5, B6--B7, B8, B9, B10, B11, B12, B13",
+                "B14, B15--B17, B18",
+                "B16--B17, B18"
+            ]
+        }
+    ],
+    "source": "example_ftest46"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B5",
+            "node": "54|If",
+            "sons": [
+                "B6, B7--null",
+                "B8, B9--null"
+            ]
+        },
+        {
+            "head": "B0",
+            "node": "4|IntegerSwitch",
+            "sons": [
+                "B12, B13--B15, B16",
+                "B14--B15, B16",
+                "B3--B4, B5, B6, B7, B8, B9, B10, B11",
+                "B1, B2--B4, B5, B6, B7, B8, B9, B10, B11"
+            ]
+        }
+    ],
+    "source": "example_ftest47"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B2",
+            "node": "19|IntegerSwitch",
+            "sons": [
+                "B5--null",
+                "B3, B4--null"
+            ]
+        },
+        {
+            "head": "B10",
+            "node": "67|If",
+            "sons": [
+		"B13--null",
+		"B11, B12--null"
+            ]
+        }
+    ],
+    "source": "example_ftest48a"
+},
+ {
+    "control splits": [
+        {
+            "head": "B2",
+            "node": "19|IntegerSwitch",
+            "sons": [
+                "B5, B6--null",
+                "B3, B4--null"
+            ]
+        },
+        {
+            "head": "B11",
+            "node": "75|If",
+            "sons": [
+		"B12, B13--null",
+		"B14, B15--null"
+            ]
+        }
+    ],
+    "source": "example_ftest48b"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B0",
+            "node": "7|If",
+            "sons": [
+                "B10, B11, B12--null",
+                "B1, B2, B3, B4, B5, B6, B7, B8, B9--null"
+            ]
+        },
+        {
+            "head": "B1",
+            "node": "8|IntegerSwitch",
+            "sons": [
+                "B2, B3--null",
+                "B4, B5--null",
+                "B6, B7--null"
+            ]
+        }
+    ],
+    "source": "example_ftest49"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B0",
+            "node": "7|If",
+            "sons": [
+                "B15, B16, B17--null",
+                "B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14--null"
+            ]
+        },
+        {
+            "head": "B1",
+            "node": "8|IntegerSwitch",
+            "sons": [
+                "B6, B7--B10",
+                "B8, B9--B10",
+                "B2, B3--B13, B14",
+                "B4, B5--B13, B14",
+                "B11, B12--B13, B14"
+            ]
+        }
+    ],
+    "source": "example_ftest50"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B0",
+            "node": "7|If",
+            "sons": [
+                "B8, B9, B10--null",
+                "B1, B2, B3, B4, B5, B6, B7--null"
+            ]
+        },
+        {
+            "head": "B1",
+            "node": "8|IntegerSwitch",
+            "sons": [
+                "B2, B3--null",
+                "B4, B5--null",
+                "B6, B7--null"
+            ]
+        }
+    ],
+    "source": "example_ftest51"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B0",
+            "node": "7|If",
+            "sons": [
+                "B13, B14, B15--null",
+                "B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12--null"
+            ]
+        },
+	{
+            "head": "B1",
+            "node": "8|IntegerSwitch",
+            "sons": [
+		"B6, B7--B10",
+		"B8, B9--B10",
+		"B11, B12--B16, B17, B18",
+		"B2, B3--B16, B17, B18",
+		"B4, B5--B16, B17, B18"
+            ]
+	}
+    ],
+    "source": "example_ftest52"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B0",
+            "node": "7|If",
+            "sons": [
+                "B17, B18, B19--null",
+                "B1, B2, B3, B4, B5, B6, B7, B12, B13, B14, B15, B16, B8, B9, B10, B11--null"
+            ]
+        },
+        {
+            "head": "B1",
+            "node": "8|IntegerSwitch",
+            "sons": [
+                "B12, B13--B16",
+                "B14, B15--B16",
+                "B7--B8, B9, B10, B11",
+                "B4, B5, B6--B8, B9, B10, B11",
+                "B2, B3, B5, B6--B8, B9, B10, B11"
+            ]
+        }
+    ],
+    "source": "example_ftest53"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B0",
+            "node": "7|If",
+            "sons": [
+                "B12, B13, B14--null",
+                "B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11--null"
+            ]
+        },
+        {
+            "head": "B1",
+            "node": "8|IntegerSwitch",
+            "sons": [
+                "B7--null",
+                "B4, B5, B6--null",
+                "B2, B3, B5, B6--null"
+            ]
+        }
+    ],
+    "source": "example_ftest54"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B0",
+            "node": "7|If",
+            "sons": [
+                "B15, B16, B17--null",
+                "B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14--null"
+            ]
+        },
+        {
+            "head": "B1",
+            "node": "8|IntegerSwitch",
+            "sons": [
+                "B2, B3--null",
+                "B4, B5--B18, B19, B20",
+                "B12, B13, B14--B18, B19, B20",
+                "B6, B7, B8, B9, B10, B11, B13, B14--B18, B19, B20"
+            ]
+        },
+        {
+            "head": "B7",
+            "node": "23|If",
+            "sons": [
+                "B8, B9--null",
+                "B10, B11--null"
+            ]
+        }
+    ],
+    "source": "example_ftest55"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B8",
+            "node": "59|If",
+            "sons": [
+                "B9, B10--null",
+                "B11, B12--null"
+            ]
+        },
+        {
+            "head": "B14",
+            "node": "36|If",
+            "sons": [
+                "B17, B18--null",
+                "B15, B16--null"
+            ]
+        },
+        {
+            "head": "B0",
+            "node": "7|If",
+            "sons": [
+                "B24, B25, B26--null",
+                "B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, B21, B22, B23--null"
+            ]
+        },
+        {
+            "head": "B1",
+            "node": "8|IntegerSwitch",
+            "sons": [
+                "B22, B23--null",
+                "B7, B8, B9, B10, B11, B12--null",
+                "B13, B14, B15, B16, B17, B18--null",
+                "B19, B20, B21--null",
+                "B4, B5, B6, B20, B21--null",
+                "B2, B3, B5, B6, B20, B21--null"
+            ]
+        }
+    ],
+    "source": "example_ftest56"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B14",
+            "node": "37|If",
+            "sons": [
+                "B15, B16--null",
+                "B17, B18--null"
+            ]
+        },
+        {
+            "head": "B8",
+            "node": "59|If",
+            "sons": [
+                "B9, B10--null",
+                "B11, B12--null"
+            ]
+        },
+        {
+            "head": "B1",
+            "node": "8|IntegerSwitch",
+            "sons": [
+                "B22, B23--null",
+                "B7, B8, B9, B10, B11, B12--B27, B28, B29",
+                "B13, B14, B15, B16, B17, B18--B27, B28, B29",
+                "B19, B20, B21--B27, B28, B29",
+                "B4, B5, B6, B20, B21--B27, B28, B29",
+                "B2, B3, B5, B6, B20, B21--B27, B28, B29"
+            ]
+        },
+        {
+            "head": "B0",
+            "node": "7|If",
+            "sons": [
+                "B24, B25, B26--null",
+                "B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, B21, B22, B23--null"
+            ]
+        }
+    ],
+    "source": "example_ftest57"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B14",
+            "node": "33|IntegerSwitch",
+            "sons": [
+                "B24, B25--null",
+                "B15, B16--B21, B22, B23",
+                "B17, B18--B21, B22, B23",
+                "B19, B20--B21, B22, B23"
+            ]
+        },
+        {
+            "head": "B2",
+            "node": "20|IntegerSwitch",
+            "sons": [
+                "B9, B10--null",
+                "B11, B12--B21, B22, B23",
+                "B13, B14, B15, B16, B17, B18, B19, B20, B24, B25--B21, B22, B23",
+                "B5, B6, B7, B8--B21, B22, B23",
+                "B3, B4, B6, B7, B8--B21, B22, B23"
+            ]
+        }
+    ],
+    "source": "example_ftest58"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B4",
+            "node": "44|IntegerSwitch",
+            "sons": [
+                "B5, B6--null",
+                "B7, B8--null",
+                "B9, B10--null"
+            ]
+        },
+        {
+            "head": "B2",
+            "node": "20|IntegerSwitch",
+            "sons": [
+                "B15, B16--null",
+                "B13, B14--null",
+                "B3, B4, B5, B6, B7, B8, B9, B10, B11, B12--null"
+            ]
+        }
+    ],
+    "source": "example_ftest59"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B4",
+            "node": "44|IntegerSwitch",
+            "sons": [
+                "B5--null",
+                "B6, B7--B12, B13",
+                "B8, B9--B12, B13",
+                "B10, B11--B12, B13"
+            ]
+        },
+        {
+            "head": "B2",
+            "node": "20|IntegerSwitch",
+            "sons": [
+                "B14, B15--null",
+                "B16, B17--null",
+                "B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13--null"
+            ]
+        }
+    ],
+    "source": "example_ftest60"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B4",
+            "node": "50|IntegerSwitch",
+            "sons": [
+                "B5, B6--null",
+                "B7, B8--null",
+                "B9, B10--null"
+            ]
+        },
+        {
+            "head": "B2",
+            "node": "20|IntegerSwitch",
+            "sons": [
+                "B15--null",
+                "B16, B17--null",
+                "B3, B4, B5, B6, B7, B8, B9, B10, B11, B12--B20, B21, B22",
+                "B13, B14--B20, B21, B22",
+                "B18, B19--B20, B21, B22"
+            ]
+        }
+    ],
+    "source": "example_ftest61"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B4",
+            "node": "54|IntegerSwitch",
+            "sons": [
+                "B5, B6--B12, B13",
+                "B7, B8--B12, B13",
+                "B9--null",
+                "B10, B11--B12, B13"
+            ]
+        },
+        {
+            "head": "B2",
+            "node": "20|IntegerSwitch",
+            "sons": [
+                "B16--null",
+                "B14, B15--B24, B25, B26",
+                "B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13--B24, B25, B26",
+                "B17, B18--B21",
+                "B19, B20--B21",
+                "B22, B23--B24, B25, B26"
+            ]
+        }
+    ],
+    "source": "example_ftest62"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B11",
+            "node": "47|IntegerSwitch",
+            "sons": [
+                "B22, B23--null",
+                "B12, B13--B19, B20, B21",
+                "B16, B17, B18--B19, B20, B21",
+                "B14, B15, B17, B18--B19, B20, B21"
+            ]
+        },
+        {
+            "head": "B2",
+            "node": "14|IntegerSwitch",
+            "sons": [
+                "B3, B4--null",
+                "B10--B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, B21, B22, B23",
+                "B7, B8, B9--B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, B21, B22, B23",
+                "B5, B6, B8, B9--B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, B21, B22, B23"
+            ]
+        },
+        {
+            "head": "B0",
+            "node": "7|If",
+            "sons": [
+                "B24, B25, B26--null",
+                "B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, B21, B22, B23--null"
+            ]
+        }
+    ],
+    "source": "example_ftest63"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B3",
+            "node": "43|If",
+            "sons": [
+                "B4, B5--null",
+                "x(40|LoopExit)--null"
+            ]
+        },
+        {
+            "head": "B8",
+            "node": "21|If",
+            "sons": [
+                "B9, B10--null",
+                "x(18|LoopExit)--null"
+            ]
+        },
+        {
+            "head": "B0",
+            "node": "4|IntegerSwitch",
+            "sons": [
+                "B1--null",
+                "B12--B13, B14, B15",
+                "B2, B3, B4, B5, B6--B13, B14, B15",
+                "B7, B8, B9, B10, B11--B13, B14, B15"
+            ]
+        }
+    ],
+    "source": "example_ftest64"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B6",
+            "node": "38|If",
+            "sons": [
+                "B9--null",
+                "B7, B8--null"
+            ]
+        },
+        {
+            "head": "B4",
+            "node": "33|If",
+            "sons": [
+                "B5--null",
+                "B6, B7, B8, B9--null"
+            ]
+        },
+        {
+            "head": "B2",
+            "node": "26|If",
+            "sons": [
+                "B3--null",
+                "B4, B5, B6, B7, B9, B8--null"
+            ]
+        }
+    ],
+    "source": "example_ftest65"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B1",
+            "node": "15|If",
+            "sons": [
+                "B2--null",
+                "B3--null"
+            ]
+        }
+    ],
+    "source": "example_ftest66"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B2",
+            "node": "20|IntegerSwitch",
+            "sons": [
+                "B13, B14--null",
+                "B8--B9, B10, B11, B12",
+                "B3, B4, B5, B6, B7--B9, B10, B11, B12"
+            ]
+        },
+        {
+            "head": "B4",
+            "node": "46|If",
+            "sons": [
+                "B5, B6--null",
+                "x(43|LoopExit)--null"
+            ]
+        }
+    ],
+    "source": "example_ftest67"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B2",
+            "node": "23|If",
+            "sons": [
+                "B18, B19--null",
+                "B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17--null"
+            ]
+        },
+        {
+            "head": "B3",
+            "node": "24|IntegerSwitch",
+            "sons": [
+                "B13--B14, B15",
+                "B16, B17--null",
+                "B10, B11, B12--B14, B15",
+                "B4, B5, B6, B7, B8, B9, B11, B12--B14, B15"
+            ]
+        },
+        {
+            "head": "B5",
+            "node": "48|If",
+            "sons": [
+                "B6, B7--null",
+                "x(45|LoopExit)--null"
+            ]
+        }
+    ],
+    "source": "example_ftest68"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B0",
+            "node": "7|If",
+            "sons": [
+                "B19, B20--null",
+                "B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18--null"
+            ]
+        },
+        {
+            "head": "B1",
+            "node": "8|IntegerSwitch",
+            "sons": [
+                "B18--null",
+                "B15--B16, B17",
+                "B12, B13, B14--B16, B17",
+                "B10, B11, B13, B14--B16, B17",
+                "B7--B8, B9",
+                "B4, B5, B6--B8, B9",
+                "B2, B3, B5, B6--B8, B9"
+            ]
+        }
+    ],
+    "source": "example_ftest69"
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B0",
+            "node": "7|If",
+            "sons": [
+                "B25, B26--null",
+                "B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, B21, B22, B23, B24--null"
+            ]
+        },
+        {
+            "head": "B1",
+            "node": "8|IntegerSwitch",
+            "sons": [
+                "B16--null",
+                "B2, B3, B5, B6, B8, B9--B11, B12",
+                "B4, B5, B6, B8, B9--B11, B12",
+                "B7, B8, B9--B11, B12",
+                "B10--B11, B12",
+                "B17, B18, B19, B20, B21, B22--B23, B24",
+                "B13, B19, B20, B21, B22--B23, B24",
+                "B14, B21, B22--B23, B24",
+                "B15--B23, B24"
+            ]
+        }
+    ],
+    "source": "example_ftest70"
+}
+,
+{
+    "source": "example_ftest71",
+    "control splits": [
+	{
+	    "node": "7|If",
+	    "head": "B0",
+	    "sons": ["B14, B15--null", "B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13--null"]
+	},
+	{
+	    "node": "8|IntegerSwitch",
+	    "head": "B1",
+	    "sons": ["B13--null", "B2, B3, B5, B6, B8, B9--B11, B12", "B4, B5, B6, B8, B9--B11, B12", "B7, B8, B9--B11, B12", "B10--B11, B12"]
+	}
+    ]
+}
+,
+{
+    "control splits": [
+        {
+            "head": "B0",
+            "node": "3|IntegerSwitch",
+            "sons": [
+                "B14--null",
+                "B1, B2, B4, B5, B7, B8--B10, B11, B12, B13",
+                "B3, B4, B5, B7, B8--B10, B11, B12, B13",
+                "B6, B7, B8--B10, B11, B12, B13",
+                "B9--B10, B11, B12, B13"
+            ]
+        }
+    ],
+    "source": "example_ftest72"
+}
+,
+{
+    "control splits": [],
+    "source": "example_ftest73"
+}
+]

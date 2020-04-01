@@ -1,0 +1,468 @@
+gate: 01 Apr 2020 16:25:12(+00:00) BEGIN: Gate
+gate: 01 Apr 2020 16:25:12(+00:00) BEGIN: Versions
+Running: mx version --oneline
+328dd7f77772+ mx 5.252.2
+Running: mx sversions 
+1d98bf1f6621+ compiler /home/cugur/Desktop/mygraal/graal
+1d98bf1f6621+ truffle /home/cugur/Desktop/mygraal/graal
+1d98bf1f6621+ sdk /home/cugur/Desktop/mygraal/graal
+Python version: sys.version_info(major=2, minor=7, micro=17, releaselevel='final', serial=0)
+gate: 01 Apr 2020 16:25:12(+00:00) END:   Versions [0:00:00.078933] [disk (free/total): 17.0GB/61.3GB]
+gate: 01 Apr 2020 16:25:12(+00:00) BEGIN: JDKReleaseInfo
+==== /home/cugur/dist/jdk/current ====
+IMPLEMENTOR="N/A"
+JAVA_VERSION="11.0.6"
+JAVA_VERSION_DATE="2020-01-14"
+MODULES="java.base java.compiler java.datatransfer java.xml java.prefs java.desktop java.instrument java.logging java.management java.security.sasl java.naming java.rmi java.management.rmi java.net.http java.scripting java.security.jgss java.transaction.xa java.sql java.sql.rowset java.xml.crypto java.se java.smartcardio jdk.accessibility jdk.internal.jvmstat jdk.attach jdk.charsets jdk.compiler jdk.crypto.ec jdk.crypto.cryptoki jdk.dynalink jdk.internal.ed jdk.editpad jdk.hotspot.agent jdk.httpserver jdk.internal.le jdk.internal.opt jdk.internal.vm.ci jdk.management jdk.unsupported jdk.internal.vm.compiler jdk.internal.vm.compiler.management jdk.jartool jdk.javadoc jdk.jcmd jdk.management.agent jdk.jconsole jdk.jdeps jdk.jdwp.agent jdk.jdi jdk.jfr jdk.jlink jdk.jshell jdk.jsobject jdk.jstatd jdk.localedata jdk.management.jfr jdk.naming.dns jdk.naming.rmi jdk.net jdk.pack jdk.rmic jdk.scripting.nashorn jdk.scripting.nashorn.shell jdk.sctp jdk.security.auth jdk.security.jgss jdk.unsupported.desktop jdk.xml.dom jdk.zipfs"
+OS_ARCH="x86_64"
+OS_NAME="Linux"
+SOURCE=".:git:67ddc3bcadd9"
+gate: 01 Apr 2020 16:25:12(+00:00) END:   JDKReleaseInfo [0:00:00.000225] [disk (free/total): 17.0GB/61.3GB]
+gate: 01 Apr 2020 16:25:12(+00:00) BEGIN: VerifyMultiReleaseProjects
+Running: mx verifymultireleaseprojects 
+gate: 01 Apr 2020 16:25:12(+00:00) END:   VerifyMultiReleaseProjects [0:00:00.048144] [disk (free/total): 17.0GB/61.3GB]
+gate: 01 Apr 2020 16:25:12(+00:00) BEGIN: ParseImportantFeaturesPhase
+Starting of testing Parsing Important Features Phase.
+WARNING: Ensure you have correct version of "native-image" tool built.
+Changing the working directory.
+Directory succesfully changed to /home/cugur/Desktop/graal_ftests/fastdb/.
+Testing file fastftest.java..
+fastdb/ folder are used for unittest like fast testing of ParseImportantFeaturesPhase.
+Testing functions: ['example_ftest1', 'example_ftest2', 'example_ftest3', 'example_ftest4', 'example_ftest5', 'example_ftest6', 'example_ftest7', 'example_ftest8', 'example_ftest9', 'example_ftest10', 'example_ftest11', 'example_ftest12', 'example_ftest13', 'example_ftest14', 'example_ftest15', 'example_ftest16', 'example_ftest17', 'example_ftest18', 'example_ftest19', 'example_ftest20', 'example_ftest21', 'example_ftest22', 'example_ftest23', 'example_ftest24', 'example_ftest25', 'example_ftest26', 'example_ftest27', 'example_ftest28', 'example_ftest29', 'example_ftest30', 'example_ftest31', 'example_ftest32', 'example_ftest33', 'example_ftest34', 'example_ftest35', 'example_ftest36', 'example_ftest37', 'example_ftest38', 'example_ftest39', 'example_ftest40', 'example_ftest41', 'example_ftest42', 'example_ftest43', 'example_ftest44', 'example_ftest45', 'example_ftest46', 'example_ftest47', 'example_ftest48a', 'example_ftest48b', 'example_ftest49', 'example_ftest50', 'example_ftest51', 'example_ftest52', 'example_ftest53', 'example_ftest54', 'example_ftest55', 'example_ftest56', 'example_ftest57', 'example_ftest58', 'example_ftest59', 'example_ftest60', 'example_ftest61', 'example_ftest62', 'example_ftest63', 'example_ftest64', 'example_ftest65', 'example_ftest66', 'example_ftest67', 'example_ftest68', 'example_ftest69', 'example_ftest70', 'example_ftest71', 'example_ftest72', 'example_ftest73']..
+Compiling fastftest.java to bytecode.
+Running native-image tool: native-image fastftest -H:+TrackNodeSourcePosition -H:+ParseImportantFeatures -H:MethodFilter=example_ftest1,example_ftest2,example_ftest3,example_ftest4,example_ftest5,example_ftest6,example_ftest7,example_ftest8,example_ftest9,example_ftest10,example_ftest11,example_ftest12,example_ftest13,example_ftest14,example_ftest15,example_ftest16,example_ftest17,example_ftest18,example_ftest19,example_ftest20,example_ftest21,example_ftest22,example_ftest23,example_ftest24,example_ftest25,example_ftest26,example_ftest27,example_ftest28,example_ftest29,example_ftest30,example_ftest31,example_ftest32,example_ftest33,example_ftest34,example_ftest35,example_ftest36,example_ftest37,example_ftest38,example_ftest39,example_ftest40,example_ftest41,example_ftest42,example_ftest43,example_ftest44,example_ftest45,example_ftest46,example_ftest47,example_ftest48a,example_ftest48b,example_ftest49,example_ftest50,example_ftest51,example_ftest52,example_ftest53,example_ftest54,example_ftest55,example_ftest56,example_ftest57,example_ftest58,example_ftest59,example_ftest60,example_ftest61,example_ftest62,example_ftest63,example_ftest64,example_ftest65,example_ftest66,example_ftest67,example_ftest68,example_ftest69,example_ftest70,example_ftest71,example_ftest72,example_ftest73
+[fastftest:7966]    classlist:   3,796.35 ms,  0.96 GB
+[fastftest:7966]        (cap):     871.54 ms,  0.96 GB
+[fastftest:7966]        setup:   3,146.89 ms,  0.96 GB
+[fastftest:7966]   (typeflow):   6,624.44 ms,  1.72 GB
+[fastftest:7966]    (objects):   5,688.98 ms,  1.72 GB
+[fastftest:7966]   (features):     354.32 ms,  1.72 GB
+[fastftest:7966]     analysis:  13,050.93 ms,  1.72 GB
+[fastftest:7966]     (clinit):     298.96 ms,  1.72 GB
+[fastftest:7966]     universe:     845.05 ms,  1.72 GB
+[fastftest:7966]      (parse):   2,196.26 ms,  1.73 GB
+[fastftest:7966]     (inline):   1,763.37 ms,  1.73 GB
+[fastftest:7966]    (compile):  11,371.75 ms,  2.53 GB
+[fastftest:7966]      compile:  16,060.42 ms,  2.53 GB
+[fastftest:7966]        image:   1,585.88 ms,  2.53 GB
+[fastftest:7966]        write:     267.74 ms,  2.53 GB
+[fastftest:7966]      [total]:  39,199.69 ms,  2.53 GB
+Compare generated results with the ground truth..
+Validating function example_ftest1.
+Validating function example_ftest2.
+Validating function example_ftest3.
+Validating function example_ftest4.
+Validating function example_ftest5.
+Validating function example_ftest6.
+Validating function example_ftest7.
+Validating function example_ftest8.
+Validating function example_ftest9.
+Validating function example_ftest10.
+Validating function example_ftest11.
+Validating function example_ftest12.
+Validating function example_ftest13.
+Validating function example_ftest14.
+Validating function example_ftest15.
+Validating function example_ftest16.
+Validating function example_ftest17.
+Validating function example_ftest18.
+Validating function example_ftest19.
+Validating function example_ftest20.
+Validating function example_ftest21.
+Validating function example_ftest22.
+Validating function example_ftest23.
+Validating function example_ftest24.
+Validating function example_ftest25.
+Validating function example_ftest26.
+Validating function example_ftest27.
+Validating function example_ftest28.
+Validating function example_ftest29.
+Validating function example_ftest30.
+Validating function example_ftest31.
+Validating function example_ftest32.
+Validating function example_ftest33.
+Validating function example_ftest34.
+Validating function example_ftest35.
+Validating function example_ftest36.
+Validating function example_ftest37.
+Validating function example_ftest38.
+Validating function example_ftest39.
+Validating function example_ftest40.
+Validating function example_ftest41.
+Validating function example_ftest42.
+Validating function example_ftest43.
+Validating function example_ftest44.
+Validating function example_ftest45.
+Validating function example_ftest46.
+Validating function example_ftest47.
+Validating function example_ftest48a.
+Validating function example_ftest48b.
+Validating function example_ftest49.
+Validating function example_ftest50.
+Validating function example_ftest51.
+Validating function example_ftest52.
+Validating function example_ftest53.
+Validating function example_ftest54.
+Validating function example_ftest55.
+Validating function example_ftest56.
+Validating function example_ftest57.
+Validating function example_ftest58.
+Validating function example_ftest59.
+Validating function example_ftest60.
+Validating function example_ftest61.
+Validating function example_ftest62.
+Validating function example_ftest63.
+Validating function example_ftest64.
+Validating function example_ftest65.
+Validating function example_ftest66.
+Validating function example_ftest67.
+Validating function example_ftest68.
+Validating function example_ftest69.
+Validating function example_ftest70.
+Validating function example_ftest71.
+Validating function example_ftest72.
+Validating function example_ftest73.
+Control Splits to be validated: 
+(u'example_ftest25', u'B4', u'39', u'If')
+(u'example_ftest22', u'B1', u'13', u'If')
+(u'example_ftest59', u'B2', u'20', u'IntegerSwitch')
+(u'example_ftest18', u'B10', u'60', u'If')
+(u'example_ftest13', u'B3', u'25', u'IntegerSwitch')
+(u'example_ftest39', u'B0', u'11', u'If')
+(u'example_ftest16', u'B0', u'8', u'If')
+(u'example_ftest65', u'B4', u'33', u'If')
+(u'example_ftest23', u'B0', u'7', u'If')
+(u'example_ftest51', u'B1', u'8', u'IntegerSwitch')
+(u'example_ftest46', u'B7', u'64', u'If')
+(u'example_ftest43', u'B8', u'44', u'IntegerSwitch')
+(u'example_ftest54', u'B1', u'8', u'IntegerSwitch')
+(u'example_ftest57', u'B8', u'59', u'If')
+(u'example_ftest15', u'B1', u'12', u'If')
+(u'example_ftest2', u'B1', u'16', u'If')
+(u'example_ftest2', u'B8', u'46', u'If')
+(u'example_ftest48b', u'B2', u'19', u'IntegerSwitch')
+(u'example_ftest9', u'B2', u'25', u'If')
+(u'example_ftest29', u'B7', u'54', u'If')
+(u'example_ftest69', u'B0', u'7', u'If')
+(u'example_ftest21', u'B6', u'38', u'If')
+(u'example_ftest68', u'B2', u'23', u'If')
+(u'example_ftest53', u'B0', u'7', u'If')
+(u'example_ftest67', u'B4', u'46', u'If')
+(u'example_ftest2', u'B14', u'65', u'If')
+(u'example_ftest50', u'B1', u'8', u'IntegerSwitch')
+(u'example_ftest64', u'B3', u'43', u'If')
+(u'example_ftest17', u'B2', u'21', u'IntegerSwitch')
+(u'example_ftest66', u'B1', u'15', u'If')
+(u'example_ftest26', u'B2', u'21', u'If')
+(u'example_ftest21', u'B4', u'29', u'If')
+(u'example_ftest14', u'B1', u'12', u'If')
+(u'example_ftest56', u'B1', u'8', u'IntegerSwitch')
+(u'example_ftest25', u'B2', u'21', u'If')
+(u'example_ftest33', u'B4', u'10', u'If')
+(u'example_ftest32', u'B3', u'22', u'If')
+(u'example_ftest5', u'B0', u'3', u'IntegerSwitch')
+(u'example_ftest69', u'B1', u'8', u'IntegerSwitch')
+(u'example_ftest44', u'B0', u'7', u'If')
+(u'example_ftest57', u'B1', u'8', u'IntegerSwitch')
+(u'example_ftest47', u'B0', u'4', u'IntegerSwitch')
+(u'example_ftest45', u'B7', u'61', u'If')
+(u'example_ftest48a', u'B10', u'67', u'If')
+(u'example_ftest19', u'B5', u'45', u'If')
+(u'example_ftest70', u'B0', u'7', u'If')
+(u'example_ftest21', u'B2', u'20', u'If')
+(u'example_ftest39', u'B2', u'13', u'IntegerSwitch')
+(u'example_ftest57', u'B14', u'37', u'If')
+(u'example_ftest19', u'B3', u'31', u'If')
+(u'example_ftest61', u'B4', u'50', u'IntegerSwitch')
+(u'example_ftest14', u'B9', u'45', u'If')
+(u'example_ftest24', u'B5', u'42', u'If')
+(u'example_ftest68', u'B5', u'48', u'If')
+(u'example_ftest70', u'B1', u'8', u'IntegerSwitch')
+(u'example_ftest38', u'B0', u'3', u'IntegerSwitch')
+(u'example_ftest3', u'B0', u'7', u'If')
+(u'example_ftest15', u'B8', u'43', u'If')
+(u'example_ftest28', u'B2', u'22', u'If')
+(u'example_ftest2', u'B20', u'84', u'If')
+(u'example_ftest28', u'B7', u'55', u'If')
+(u'example_ftest27', u'B2', u'22', u'If')
+(u'example_ftest30', u'B2', u'21', u'If')
+(u'example_ftest45', u'B0', u'4', u'IntegerSwitch')
+(u'example_ftest27', u'B4', u'40', u'If')
+(u'example_ftest40', u'B0', u'3', u'IntegerSwitch')
+(u'example_ftest8', u'B1', u'12', u'If')
+(u'example_ftest53', u'B1', u'8', u'IntegerSwitch')
+(u'example_ftest31', u'B2', u'22', u'If')
+(u'example_ftest11', u'B1', u'60', u'Invoke#Throwable.fillInStackTrace')
+(u'example_ftest64', u'B0', u'4', u'IntegerSwitch')
+(u'example_ftest30', u'B4', u'39', u'If')
+(u'example_ftest65', u'B6', u'38', u'If')
+(u'example_ftest36', u'B0', u'11', u'If')
+(u'example_ftest48a', u'B2', u'19', u'IntegerSwitch')
+(u'example_ftest2', u'B25', u'96', u'If')
+(u'example_ftest60', u'B2', u'20', u'IntegerSwitch')
+(u'example_ftest23', u'B4', u'26', u'If')
+(u'example_ftest18', u'B3', u'25', u'IntegerSwitch')
+(u'example_ftest55', u'B1', u'8', u'IntegerSwitch')
+(u'example_ftest26', u'B4', u'38', u'If')
+(u'example_ftest32', u'B6', u'41', u'If')
+(u'example_ftest34', u'B1', u'14', u'If')
+(u'example_ftest31', u'B4', u'40', u'If')
+(u'example_ftest47', u'B5', u'54', u'If')
+(u'example_ftest2', u'B7', u'39', u'If')
+(u'example_ftest43', u'B10', u'84', u'If')
+(u'example_ftest43', u'B2', u'23', u'If')
+(u'example_ftest14', u'B0', u'8', u'If')
+(u'example_ftest42', u'B4', u'27', u'IntegerSwitch')
+(u'example_ftest16', u'B6', u'40', u'If')
+(u'example_ftest22', u'B8', u'53', u'If')
+(u'example_ftest34', u'B2', u'21', u'If')
+(u'example_ftest11', u'B3', u'13', u'If')
+(u'example_ftest20', u'B2', u'19', u'If')
+(u'example_ftest16', u'B15', u'90', u'If')
+(u'example_ftest34', u'B0', u'10', u'If')
+(u'example_ftest41', u'B0', u'3', u'IntegerSwitch')
+(u'example_ftest65', u'B2', u'26', u'If')
+(u'example_ftest2', u'B2', u'23', u'If')
+(u'example_ftest54', u'B0', u'7', u'If')
+(u'example_ftest16', u'B21', u'123', u'If')
+(u'example_ftest29', u'B4', u'40', u'If')
+(u'example_ftest63', u'B11', u'47', u'IntegerSwitch')
+(u'example_ftest29', u'B2', u'22', u'If')
+(u'example_ftest55', u'B7', u'23', u'If')
+(u'example_ftest16', u'B9', u'59', u'If')
+(u'example_ftest67', u'B2', u'20', u'IntegerSwitch')
+(u'example_ftest18', u'B2', u'24', u'If')
+(u'example_ftest56', u'B8', u'59', u'If')
+(u'example_ftest55', u'B0', u'7', u'If')
+(u'example_ftest28', u'B4', u'40', u'If')
+(u'example_ftest52', u'B0', u'7', u'If')
+(u'example_ftest62', u'B2', u'20', u'IntegerSwitch')
+(u'example_ftest11', u'B0', u'7', u'If')
+(u'example_ftest63', u'B0', u'7', u'If')
+(u'example_ftest2', u'B19', u'77', u'If')
+(u'example_ftest61', u'B2', u'20', u'IntegerSwitch')
+(u'example_ftest2', u'B13', u'59', u'If')
+(u'example_ftest48b', u'B11', u'75', u'If')
+(u'example_ftest39', u'B13', u'60', u'If')
+(u'example_ftest2', u'B31', u'114', u'If')
+(u'example_ftest64', u'B8', u'21', u'If')
+(u'example_ftest1', u'B0', u'7', u'If')
+(u'example_ftest56', u'B0', u'7', u'If')
+(u'example_ftest52', u'B1', u'8', u'IntegerSwitch')
+(u'example_ftest56', u'B14', u'36', u'If')
+(u'example_ftest59', u'B4', u'44', u'IntegerSwitch')
+(u'example_ftest51', u'B0', u'7', u'If')
+(u'example_ftest68', u'B3', u'24', u'IntegerSwitch')
+(u'example_ftest32', u'B0', u'8', u'If')
+(u'example_ftest44', u'B3', u'15', u'IntegerSwitch')
+(u'example_ftest42', u'B2', u'25', u'If')
+(u'example_ftest57', u'B0', u'7', u'If')
+(u'example_ftest4', u'B0', u'7', u'If')
+(u'example_ftest2', u'B32', u'120', u'If')
+(u'example_ftest24', u'B0', u'7', u'If')
+(u'example_ftest71', u'B0', u'7', u'If')
+(u'example_ftest60', u'B4', u'44', u'IntegerSwitch')
+(u'example_ftest2', u'B26', u'102', u'If')
+(u'example_ftest15', u'B0', u'8', u'If')
+(u'example_ftest49', u'B1', u'8', u'IntegerSwitch')
+(u'example_ftest58', u'B2', u'20', u'IntegerSwitch')
+(u'example_ftest6', u'B0', u'3', u'IntegerSwitch')
+(u'example_ftest32', u'B4', u'26', u'If')
+(u'example_ftest35', u'B4', u'39', u'If')
+(u'example_ftest10', u'B0', u'7', u'If')
+(u'example_ftest63', u'B2', u'14', u'IntegerSwitch')
+(u'example_ftest17', u'B4', u'52', u'If')
+(u'example_ftest13', u'B0', u'7', u'If')
+(u'example_ftest22', u'B3', u'23', u'If')
+(u'example_ftest71', u'B1', u'8', u'IntegerSwitch')
+(u'example_ftest12', u'B0', u'3', u'IntegerSwitch')
+(u'example_ftest72', u'B0', u'3', u'IntegerSwitch')
+(u'example_ftest62', u'B4', u'54', u'IntegerSwitch')
+(u'example_ftest27', u'B7', u'55', u'If')
+(u'example_ftest49', u'B0', u'7', u'If')
+(u'example_ftest7', u'B1', u'12', u'If')
+(u'example_ftest50', u'B0', u'7', u'If')
+(u'example_ftest58', u'B14', u'33', u'IntegerSwitch')
+(u'example_ftest31', u'B8', u'56', u'If')
+(u'example_ftest46', u'B0', u'4', u'IntegerSwitch')
+(u'example_ftest17', u'B11', u'28', u'If')
+(u'example_ftest20', u'B5', u'42', u'If')
+Validating Control Split: example_ftest72   50154   B0      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest71   50416   B1      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest71   50416   B0      3|If                                :True
+Validating Control Split: example_ftest70   50422   B1      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest70   50422   B0      3|If                                :True
+Validating Control Split: example_ftest69   50436   B1      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest69   50436   B0      3|If                                :True
+Validating Control Split: example_ftest68   50449   B5      3|If                                :True
+Validating Control Split: example_ftest68   50449   B3      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest68   50449   B2      3|If                                :True
+Validating Control Split: example_ftest67   50459   B4      3|If                                :True
+Validating Control Split: example_ftest67   50459   B2      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest66   50475   B1      3|If                                :True
+Validating Control Split: example_ftest65   50478   B6      3|If                                :True
+Validating Control Split: example_ftest65   50478   B4      3|If                                :True
+Validating Control Split: example_ftest65   50478   B2      3|If                                :True
+Validating Control Split: example_ftest64   50482   B3      3|If                                :True
+Validating Control Split: example_ftest64   50482   B8      3|If                                :True
+Validating Control Split: example_ftest64   50482   B0      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest63   50494   B11     3|IntegerSwitch                     :True
+Validating Control Split: example_ftest63   50494   B2      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest63   50494   B0      3|If                                :True
+Validating Control Split: example_ftest62   50498   B4      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest62   50498   B2      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest61   50514   B4      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest61   50514   B2      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest60   50529   B4      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest60   50529   B2      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest59   50533   B4      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest59   50533   B2      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest58   50545   B14     3|IntegerSwitch                     :True
+Validating Control Split: example_ftest58   50545   B2      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest57   50549   B8      3|If                                :True
+Validating Control Split: example_ftest57   50549   B14     3|If                                :True
+Validating Control Split: example_ftest57   50549   B1      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest57   50549   B0      3|If                                :True
+Validating Control Split: example_ftest56   50562   B8      3|If                                :True
+Validating Control Split: example_ftest56   50562   B14     3|If                                :True
+Validating Control Split: example_ftest56   50562   B1      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest56   50562   B0      3|If                                :True
+Validating Control Split: example_ftest55   50567   B7      3|If                                :True
+Validating Control Split: example_ftest55   50567   B1      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest55   50567   B0      3|If                                :True
+Validating Control Split: example_ftest54   50570   B1      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest54   50570   B0      3|If                                :True
+Validating Control Split: example_ftest53   50575   B1      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest53   50575   B0      3|If                                :True
+Validating Control Split: example_ftest52   50581   B1      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest52   50581   B0      3|If                                :True
+Validating Control Split: example_ftest51   50587   B1      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest51   50587   B0      3|If                                :True
+Validating Control Split: example_ftest50   50593   B1      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest50   50593   B0      3|If                                :True
+Validating Control Split: example_ftest49   50601   B1      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest49   50601   B0      3|If                                :True
+Validating Control Split: example_ftest48b  50605   B2      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest48b  50605   B11     3|If                                :True
+Validating Control Split: example_ftest48a  50610   B2      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest48a  50610   B10     3|If                                :True
+Validating Control Split: example_ftest47   50614   B5      3|If                                :True
+Validating Control Split: example_ftest47   50614   B0      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest46   50616   B7      3|If                                :True
+Validating Control Split: example_ftest46   50616   B0      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest45   50619   B7      3|If                                :True
+Validating Control Split: example_ftest45   50619   B0      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest44   50626   B3      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest44   50626   B0      3|If                                :True
+Validating Control Split: example_ftest43   50629   B2      3|If                                :True
+Validating Control Split: example_ftest43   50629   B10     3|If                                :True
+Validating Control Split: example_ftest43   50629   B8      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest42   50640   B4      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest42   50640   B2      3|If                                :True
+Validating Control Split: example_ftest41   50647   B0      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest40   50650   B0      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest39   50653   B13     3|If                                :True
+Validating Control Split: example_ftest39   50653   B2      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest39   50653   B0      3|If                                :True
+Validating Control Split: example_ftest38   50666   B0      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest36   50814   B0      3|If                                :True
+Validating Control Split: example_ftest35   50817   B4      3|If                                :True
+Validating Control Split: example_ftest34   51809   B2      3|If                                :True
+Validating Control Split: example_ftest34   51809   B1      3|If                                :True
+Validating Control Split: example_ftest34   51809   B0      3|If                                :True
+Validating Control Split: example_ftest33   51823   B4      3|If                                :True
+Validating Control Split: example_ftest1    51821   B0      3|If                                :True
+Validating Control Split: example_ftest2    51828   B2      3|If                                :True
+Validating Control Split: example_ftest2    51828   B1      3|If                                :True
+Validating Control Split: example_ftest2    51828   B8      3|If                                :True
+Validating Control Split: example_ftest2    51828   B7      3|If                                :True
+Validating Control Split: example_ftest2    51828   B14     3|If                                :True
+Validating Control Split: example_ftest2    51828   B13     3|If                                :True
+Validating Control Split: example_ftest2    51828   B20     3|If                                :True
+Validating Control Split: example_ftest2    51828   B19     3|If                                :True
+Validating Control Split: example_ftest2    51828   B26     3|If                                :True
+Validating Control Split: example_ftest2    51828   B25     3|If                                :True
+Validating Control Split: example_ftest2    51828   B32     3|If                                :True
+Validating Control Split: example_ftest2    51828   B31     3|If                                :True
+Validating Control Split: example_ftest32   51859   B6      3|If                                :True
+Validating Control Split: example_ftest32   51859   B4      3|If                                :True
+Validating Control Split: example_ftest32   51859   B3      3|If                                :True
+Validating Control Split: example_ftest32   51859   B0      3|If                                :True
+Validating Control Split: example_ftest31   51871   B8      3|If                                :True
+Validating Control Split: example_ftest31   51871   B4      3|If                                :True
+Validating Control Split: example_ftest31   51871   B2      3|If                                :True
+Validating Control Split: example_ftest30   51879   B4      3|If                                :True
+Validating Control Split: example_ftest30   51879   B2      3|If                                :True
+Validating Control Split: example_ftest29   51887   B7      3|If                                :True
+Validating Control Split: example_ftest29   51887   B4      3|If                                :True
+Validating Control Split: example_ftest29   51887   B2      3|If                                :True
+Validating Control Split: example_ftest28   51894   B7      3|If                                :True
+Validating Control Split: example_ftest28   51894   B4      3|If                                :True
+Validating Control Split: example_ftest28   51894   B2      3|If                                :True
+Validating Control Split: example_ftest3    51913   B0      3|If                                :True
+Validating Control Split: example_ftest4    51918   B0      3|If                                :True
+Validating Control Split: example_ftest27   51919   B7      3|If                                :True
+Validating Control Split: example_ftest27   51919   B4      3|If                                :True
+Validating Control Split: example_ftest27   51919   B2      3|If                                :True
+Validating Control Split: example_ftest5    51920   B0      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest6    51922   B0      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest7    51924   B1      3|If                                :True
+Validating Control Split: example_ftest26   51925   B4      3|If                                :True
+Validating Control Split: example_ftest26   51925   B2      3|If                                :True
+Validating Control Split: example_ftest8    51926   B1      3|If                                :True
+Validating Control Split: example_ftest25   51928   B4      3|If                                :True
+Validating Control Split: example_ftest25   51928   B2      3|If                                :True
+Validating Control Split: example_ftest9    51930   B2      3|If                                :True
+Validating Control Split: example_ftest24   51933   B5      3|If                                :True
+Validating Control Split: example_ftest10   51935   B0      3|If                                :True
+Validating Control Split: example_ftest24   51933   B0      3|If                                :True
+Validating Control Split: example_ftest23   51945   B4      3|If                                :True
+Validating Control Split: example_ftest23   51945   B0      3|If                                :True
+Validating Control Split: example_ftest22   51950   B8      3|If                                :True
+Validating Control Split: example_ftest22   51950   B3      3|If                                :True
+Validating Control Split: example_ftest22   51950   B1      3|If                                :True
+Validating Control Split: example_ftest21   51954   B6      3|If                                :True
+Validating Control Split: example_ftest21   51954   B4      3|If                                :True
+Validating Control Split: example_ftest21   51954   B2      3|If                                :True
+Validating Control Split: example_ftest20   51956   B5      3|If                                :True
+Validating Control Split: example_ftest20   51956   B2      3|If                                :True
+Validating Control Split: example_ftest11   51953   B3      3|If                                :True
+Validating Control Split: example_ftest11   51953   B1      3|Invoke#Throwable.fillInStackTrace :True
+Validating Control Split: example_ftest11   51953   B0      3|If                                :True
+Validating Control Split: example_ftest19   51958   B5      3|If                                :True
+Validating Control Split: example_ftest19   51958   B3      3|If                                :True
+Validating Control Split: example_ftest12   51961   B0      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest18   51970   B10     3|If                                :True
+Validating Control Split: example_ftest13   51971   B3      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest13   51971   B0      3|If                                :True
+Validating Control Split: example_ftest14   51973   B1      3|If                                :True
+Validating Control Split: example_ftest14   51973   B9      3|If                                :True
+Validating Control Split: example_ftest14   51973   B0      3|If                                :True
+Validating Control Split: example_ftest15   51976   B1      3|If                                :True
+Validating Control Split: example_ftest15   51976   B8      3|If                                :True
+Validating Control Split: example_ftest15   51976   B0      3|If                                :True
+Validating Control Split: example_ftest18   51970   B3      3|IntegerSwitch                     :True
+Validating Control Split: example_ftest18   51970   B2      3|If                                :True
+Validating Control Split: example_ftest16   51977   B0      3|If                                :True
+Validating Control Split: example_ftest16   51977   B15     3|If                                :True
+Validating Control Split: example_ftest16   51977   B21     3|If                                :True
+Validating Control Split: example_ftest16   51977   B9      3|If                                :True
+Validating Control Split: example_ftest16   51977   B6      3|If                                :True
+Validating Control Split: example_ftest17   51980   B4      3|If                                :True
+Validating Control Split: example_ftest17   51980   B11     3|If                                :True
+Validating Control Split: example_ftest17   51980   B2      3|IntegerSwitch                     :True
+Succesfully passed Parse Important Features Tests.
+Detailed information can be found at "/home/cugur/Desktop/graal_ftests/fastdb/importantResults_fastftest.csv".
+Cleaning the current directory.
+Parse Important Features Tests: Results are written to /home/cugur/Desktop/graal_ftests/fastdb/./FeaturesTesting_2020-04-01_16:25:12.675713.csv.
+gate: 01 Apr 2020 16:25:55(+00:43) END:   ParseImportantFeaturesPhase [0:00:42.941543] [disk (free/total): 17.0GB/61.3GB]
+WARNING: Removing scaladacapo:actors from benchmarks because corba has been removed since JDK11 (http://openjdk.java.net/jeps/320)
+gate: 01 Apr 2020 16:25:55(+00:43) END:   Gate [0:00:43.070130] [disk (free/total): 17.0GB/61.3GB]
+Gate task times:
+  0:00:00.078933	Versions
+  0:00:00.000225	JDKReleaseInfo
+  0:00:00.048144	VerifyMultiReleaseProjects
+  0:00:42.941543	ParseImportantFeaturesPhase
+  =======
+  0:00:43.070130
+
